@@ -42,20 +42,22 @@ body {
 .penguin {
   width: 600px;
   height: 600px;
-  margin: auto;
-  margin-top: 75px;
+  margin: 10px auto;
+  margin-top: 79px;
   z-index: 4;
   position: relative;
   transition: transform 1s ease-in-out 0ms;
 }
 
 .penguin * {
+  top:70%;
   position: absolute;
 }
 
 .penguin:active {
-  transform: scale(1.9);
+  transform: scale(1.5);
   cursor: not-allowed;
+  
 }
 .land:active{
   transform:scale(1);
@@ -174,6 +176,7 @@ body {
 }
 
 .penguin-body {
+  top:90%;
   width: 53%;
   height: 45%;
   background: linear-gradient(
@@ -270,8 +273,46 @@ body {
   margin-top: -10vh;
   left:-50%;
 }
-
-
+.bubble{
+  background-color: var(--penguin-picorna);
+  color:#eff;
+  padding:0.5em 1em;
+font-family:'Courier New', Courier, monospace;
+transition: 0.5s;
+border-radius: 0.6em 0.6em 0em 0.6em;
+box-shadow: 0.16em 0.16em 0 0em rgba(248, 104, 33,0.8);
+}
+.bubble::after{
+  border-radius: 10%;
+  content:'';
+  position:absolute;
+  border:0.5em solid transparent;
+  border-left-color:var(--penguin-picorna);
+  border-top-color: var(--penguin-picorna);
+  
+  right:-14.2%;
+  top:87%;
+  transform: skewX(66deg) skewY(-1deg);
+  transform-origin: 100%;
+  
+}
+.speech{
+  border-radius: 10%;
+  color:var(--penguin-face);
+  display:flex;
+  align-items:left;
+  font-size:3em;
+  position:absolute;
+  left:-48%;
+  top:-5%;
+  animation: speech .7s linear 1;
+}
+@media screen and (max-width:1250px){
+  .speech{
+    top:-8%;
+    left:-10%;
+  }
+}
     </style>
     <title>Penguin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -279,6 +320,7 @@ body {
 
   <body>
     <section>
+  
         <div class="penguin">
             <div class="penguin-head">
               <div class="face left"></div>
@@ -302,12 +344,14 @@ body {
               <div class="foot right"></div>
             
             </div>
-           
+            <div class="speech"><p class="bubble">I'm PINGU!!</p></div>
+            
+             
             
     </section>
     <footer>
       <div class="land">
-        <div><p>THATS TO DEEP</p></div>
+        <div></div>
   
     </footer>
   </body>
