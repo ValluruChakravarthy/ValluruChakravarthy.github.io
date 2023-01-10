@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" 
+        content= "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tictac.css">
     <script>
       var flag=0,par=0,win=0;
+      var game=0; 
+      var comp=8;
+      function relo() {
+                location.reload();
+                var flag=0,par=0,win=0;
+      var game=0;
+                 
+        }
+        function gameset(){
+            game=0;
+            document.getElementById('setgame').style.backgroundColor='#0a0';
+            
+          document.getElementById('gameplay').remove();
+          document.getElementById('twop').remove();
+            document.getElementById('onep').style.zIndex(-3);
+        }
+        function gameset1(){
+          game=1;
+          document.getElementById('setgame').style.backgroundColor='#0a0';
+         
+          document.getElementById('gameplay').remove();
+          document.getElementById('onep').remove();
+          document.getElementById('twop').style.zIndex(-3);
+        }
+        function setY(){
+          document.getElementById('select').style.backgroundColor='#0a0';
+          
+            document.getElementById('intro').remove();
+          
+         
+        }
       function setX(){
         document.getElementById('select').style.backgroundColor='#0a0'; 
           flag=1;
-          alert("Setted X");
-          
-      }
-      function setY(){
-        if(flag==1){
-          alert("Player already set")
-        }else{
-          flag=0;
-          alert("Setted Y");
-          document.getElementsByClassName('select').style.backgroundColor='#0a0'; 
-        }
          
+          document.getElementById('intro').remove();
       }
+//Logic for One Player
+function myfun1(w){
+  if(win>0){
+          document.getElementById(12345679).disabled = true;
+          alert("Game Over!!!! :)")
+        }
+        else
+        if(flag==1){
+     document.getElementById(w).innerHTML = "X";
+     
+    
+     document.getElementById(w).disabled = true;
+        }
+        else if(flag==0){
+          document.getElementById(w).innerHTML = "0";
+          document.getElementById(w).disabled = true;
+        
+        }
+}
       
+       
+//Logic fr Two lpayer
       function myfun(w){
         if(win>0){
           document.getElementById(12345679).disabled = true;
@@ -41,6 +84,7 @@
         }
         
       }
+    
   //Logic fr WinnerOO
   function mycheck(){
     if(document.getElementById(1).textContent== 'X'){
@@ -197,16 +241,32 @@
           document.getElementById(7).style.backgroundColor='#181'; 
         }
     }
+  }
     
-    }
   
   
     </script>
 </head>
 <div class="outer">
   <div class="inner">
-    <div class="board">
-      <table>
+    <button class="reset" onClick="relo()">Reset</button>
+    <div class="board">   
+      <div id="gameplay" class="gameplay">
+        <p id="game">Choose Game:</p>
+          <br>
+          <div id="setgameo">  One Player<button id="setgame" onclick="gameset() "></button>
+            Two Player<button id="setgame" onclick="gameset1()"></button>
+            </div>
+      </div>
+      <div id="intro" class="intro">
+        <p id="choose">Choose your Player</p>
+          <br>
+          <div id="selecto">  O<button id="select" onclick="setY() "></button>
+            X<button id="select" onclick="setX() "></button>
+            </div>
+      </div>
+      <table id="twop">
+        
         <tr>
           <td><button type="text" id=1 onclick=' myfun(1),mycheck(),mycheck1()'></button></td>
           <td><button type="text" id=2 onclick='myfun(2),mycheck(),mycheck1()'></button></td>
@@ -225,13 +285,32 @@
           <td><button type="text" id=9 onclick='myfun(9),mycheck(),mycheck1()'></button></td>
           
         </tr>
+    
+      </table>
+      <table id="onep">
+        
+        <tr>
+          <td><button type="text" id=1 onclick='myfun1(1)'></button></td>
+          <td><button type="text" id=2 onclick='myfun1(2)'></button></td>
+          <td><button type="text" id=3 onclick='myfun1(3)'></button></td>
+          
+        </tr>
+        <tr>
+          <td><button type="text" id=4 onclick='myfun1(4)'></button></td>
+          <td><button type="text" id=5 onclick='myfun1(5)'></button></td>
+          <td><button type="text" id=6 onclick='myfun1(6)'></button></td>
+          
+        </tr>
+        <tr>
+          <td><button type="text" id=7 onclick='myfun1(7)'></button></td>
+          <td><button type="text" id=8 onclick='myfun1(8)'></button></td>
+          <td><button type="text" id=9 onclick='myfun1(9)'></button></td>
+          
+        </tr>
+    
       </table>
     </div>
   </div>
-  <p id="choose">Choose your Player..
-    <br>
-    <div id="selecto">  X<button id="select" onclick="setX() "></button>
-      Y<button id="select" onclick="setY()"></button></div>
 
 </p>
   </div>
