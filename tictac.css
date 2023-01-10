@@ -166,7 +166,8 @@ table{
 }
 @media screen and (max-width:600px){
     *{
-            height:50vw;
-          width:30vw;
+            height:100vw;
+          width:100vw;
+          overflow: scroll;
     }
     }
