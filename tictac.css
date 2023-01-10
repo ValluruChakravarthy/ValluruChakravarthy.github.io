@@ -6,6 +6,7 @@
 }
 
 html{
+    max-height:50vw;
 background: linear-gradient(90deg,rgb(122, 250, 214),rgb(45, 59, 122),rgb(48, 12, 103));
 }
 table{
@@ -22,6 +23,7 @@ padding:2vw;
 border-radius:10%;
 box-sizing: border-box;
 }
+
 button[type="text"]{
     cursor:crosshair;
     align-items:center;
@@ -29,16 +31,18 @@ button[type="text"]{
     width:8vw;
     gap:0;
     color:rgb(0, 0, 0);
-   border-color: rgb(224, 118, 82);
 font-size:auto;
 font-family: 'Segoe UI';
 border-color: transparent;
-background: rgb(234, 199, 58);
-padding:1vw;
+background: rgb(255, 225, 0);
+padding-bottom: 1vw;
+font-size:6.3vw;
+font-family:'Cambria';
 }
 button[type="text"]{
     margin:0;
 }
+
 .inner{
     margin:0 auto;
     font-size: auto;
@@ -50,10 +54,61 @@ button[type="text"]{
     border-radius: 10%;
     background: rgb(197, 113, 67);
     box-shadow:0.2vw 0.1vw 1vw 1vw rgb(41, 35, 32);
-    z-index:1;
+    z-index:0;
     font-family: Georgia;
 }
-
+.reset{
+background-color: rgb(197, 113, 67);
+margin:0 auto;
+z-index: 2;
+border: none;
+border-radius: 35%;
+font-size:1.8vw;
+left:7%;
+top:-1%;
+overflow: hidden;
+position: relative;
+}
+.intro{
+    background: rgba(40,40,40,1)
+    -webkit-radial-gradient(center, rgb(42, 107, 75), rgba(0,20,20,.6));
+  background: rgba(40,40,40,1)
+    -moz-radial-gradient(center, rgb(61, 125, 94), rgba(0,20,20,.6));
+    position:absolute;
+    overflow: visible;
+    height:25.8vw;
+    width:25.8vw;
+    margin: 0 auto;
+    top:7.4%;
+    left:6.6%;
+    border-radius: 3%;
+    z-index: 3;
+    padding:4vw;
+    text-align:justify;
+    color:orange;
+}
+.gameplay{
+    background-color: pink;
+    position:relative;
+    overflow: visible;
+    height:25.8vw;
+    width:25.8vw;
+    margin: 0 auto;
+    top:7.4%;
+    left:6.6%;
+    border-radius: 3%;
+    z-index: 5;
+    padding:4vw;
+    text-align:justify;
+    color:orange;
+}
+#setgame{
+    height:2vw;
+    width:2vw;
+}
+.reset:hover{
+    background-color: aqua;
+}
 h2{
 padding:1.4vw;
 }
@@ -69,12 +124,13 @@ font-family:Franklin Gothic Medium;
 
 
 button[id="select"]{
-    height: 1vw;
+    height: 2vw;
     width: 2vw;
 }
 #choose{
-    margin:auto auto auto 35%;
-
+    text-align: center;
+    padding:1vw;
+margin-bottom: 2vw;
 }
 div[id="selecto"]{
     display: flex;
@@ -83,9 +139,15 @@ div[id="selecto"]{
     justify-content: center;
     gap:1vw;
 }
+#select1{
+    height:2vw;
+    width:2vw;
+    border-radius:50%;
+}
 #select{
     border-radius: 50%;
 }
+
 #select:active{
     background-color: green;
 }
