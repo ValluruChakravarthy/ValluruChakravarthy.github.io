@@ -10,7 +10,7 @@ html{
 background: linear-gradient(90deg,rgb(122, 250, 214),rgb(45, 59, 122),rgb(48, 12, 103));
 }
 table{
-    box-shadow:linear-gradient(180deg,rgb(122, 250, 214),rgb(45, 59, 122),rgb(48, 12, 103));
+
 border-color: blueviolet;
 margin:0 auto;
 font-size: auto;
@@ -19,7 +19,7 @@ width:30vw;
 position: fixed;
 left:32%;
 top:20%;
-padding:2vw;
+padding:3.6vw;
 border-radius:10%;
 box-sizing: border-box;
 }
@@ -33,11 +33,13 @@ button[type="text"]{
     color:rgb(0, 0, 0);
 font-size:auto;
 font-family: 'Segoe UI';
-border-color: transparent;
-background: rgb(255, 225, 0);
+border-color:black;
+    background: rgb(197, 113, 67);
 padding-bottom: 1vw;
+padding-top:1vw;
 font-size:6.3vw;
 font-family:'Cambria';
+
 }
 button[type="text"]{
     margin:0;
@@ -46,28 +48,44 @@ button[type="text"]{
 .inner{
     margin:0 auto;
     font-size: auto;
-    height:30vw;
-    width:30vw;
+    height:32vw;
+    width:32vw;
     position: fixed;
     left:32%;
     top:20%;
     border-radius: 10%;
-    background: rgb(197, 113, 67);
-    box-shadow:0.2vw 0.1vw 1vw 1vw rgb(41, 35, 32);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: cabins1 12.3s ease-in-out infinite;
+background-size: 100vw 160vw;
+    box-shadow:0.2vw 0.2vw 5vw 1vw  rgb(33, 124, 83);
+    box-shadow:0.5vw 0.5vw 15vw 5vw  rgb(25, 88, 65);
     z-index:0;
-    font-family: Georgia;
+    border: 1vw solid;
 }
 .reset{
 background-color: rgb(197, 113, 67);
 margin:0 auto;
 z-index: 2;
-border: none;
-border-radius: 35%;
-font-size:1.8vw;
+border: solid;
+border-radius: 10%;
+font-size:1.5vw;
 left:7%;
 top:-1%;
 overflow: hidden;
 position: relative;
+font-family:sans-serif;
+padding: 0.05vw;
+font-weight: bolder;
+}
+#labe{
+    margin: 24vw auto;
+    text-align: center;
+    padding:0.3vw;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium';
+    z-index: 9;
+    position: relative;
+   
 }
 .intro{
     background: rgba(40,40,40,1)
@@ -76,10 +94,10 @@ position: relative;
     -moz-radial-gradient(center, rgb(61, 125, 94), rgba(0,20,20,.6));
     position:absolute;
     overflow: hidden;
-    height:25.8vw;
+    height:24.8vw;
     width:25.8vw;
     margin: 0 auto;
-    top:7.4%;
+    top:8.7%;
     left:6.6%;
     border-radius: 3%;
     z-index: 3;
@@ -88,11 +106,14 @@ position: relative;
     color:orange;
 }
 .gameplay{
-    background-color: rgb(77, 171, 202);
+    background: rgba(40,40,40,1)
+    -webkit-radial-gradient(center, rgb(42, 107, 75), rgba(0,20,20,.6));
+  background: rgba(40,40,40,1)
+    -moz-radial-gradient(center, rgb(61, 125, 94), rgba(0,20,20,.6));
     position:relative;
     overflow: hidden;
-    height:24.8vw;
-    width:24.8vw;
+    height:24.1vw;
+    width:24.1vw;
     margin: 0 auto;
     left:-0.4%;
     border-radius: 3%;
@@ -101,7 +122,7 @@ position: relative;
     text-align:justify;
     color:orange;
     font-family: 'Impact';
-    color:blue;
+    color:rgb(255, 81, 0);
     letter-spacing: 0;
 }
 #setgame{
@@ -109,7 +130,10 @@ position: relative;
     height:2vw;
     width:2vw;
     border-radius: 50%;
-    background-color: rgb(77, 171, 202);
+    background-color:rgb(255, 102, 0);
+}
+#setgame:hover{
+    background-color: rgb(23, 144, 27);
 }
 .reset:hover,#winner:hover{
     background-color: rgb(255, 102, 0);
@@ -119,26 +143,28 @@ button[id="winner"]{
     margin:0 auto;
     z-index: 2;
     border: none;
-    border-radius: 35%;
-    font-size:1.8vw;
+    border-radius: 15%;
+    font-size:1.5vw;
     left:37%;
     top:-1%;
+    border: solid;
     overflow: hidden;
     position: relative;
+    font-family:sans-serif;
+    font-weight: bolder;
 }
 h2{
 padding:1.4vw;
 }
 h1{
-
-padding-left:12.99em;
-padding-top:0.7vw;
-background-color: rgba(152, 202, 246,0.1);
-font-size:3vw;
-height:1%;
-font-family:Franklin Gothic Medium;
+    background: rgba(259,69,0,0.5);
+    width:100%;
+    text-align: center;
+    transform-box:fill-box;
+    color:black;
+    background: linear-gradient(-40deg, #ee7752, #23d5ab,#e73c7e, #23a6d5,);
+  animation: cabins 15.2s ease-in-out infinite;
 }
-
 
 button[id="select"]{
     height: 2vw;
@@ -148,6 +174,9 @@ button[id="select"]{
     text-align: center;
     padding:1vw;
 margin-bottom: 2vw;
+background: linear-gradient(-40deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+animation: cabins1 12.3s ease-in-out infinite;
+background-size: 100vw 160vw;
 }
 div[id="selecto"]{
     display: flex;
@@ -163,9 +192,10 @@ div[id="selecto"]{
 }
 #select{
     border-radius: 50%;
+    background-color: orange;
 }
 
-#select:active,#setgame:hover,#select:hover{
+#select:active,#select:hover{
     background-color: green;
 }
 #select{
@@ -175,9 +205,81 @@ div[id="selecto"]{
 footer{
     margin:35%  auto auto 39%;
 }
-@media screen and (max-width:100px){
-table{
-        top:20%;
-      font-size: 10px;
+@media screen and (max-width:350px){
+    table{
+        left:0;
+            top:20%;
+          font-size: 10px;
+        min-height:80vw;
+        min-width:80vw;
+    }
+        .inner,.outer{
+            left:0;
+            min-height:80vw;
+        min-width:80vw;
+        }
+        #gameplay,#intro{
+            left:0;
+            font-size:10vw;
+            min-height:80vw;
+        min-width:80vw;
+        }
+        button[type="text"]{
+            font-size:10vw;
+            min-height:20vw;
+        min-width:20vw;
+            left:-10%;
+            padding:0;
+        }
+        table{
+            padding:10vw;
+            left:0;
+        }
+        #winner,.reset{
+            min-height:6vw;
+        min-width:15vw;
+            font-size:4vw;
+            top:1vw;
+        }
+        p[id="labe"]{
+            font-size:0;
+        }
 }
-}
+    
+@keyframes cabins {
+    0%{
+        background-color: #23d5ab;
+    }
+    25% {
+      background-color:  #e73c7e;
+    }
+    50% {
+      background-color: purple;
+    }
+    75%{
+        background-color: #23d5ab;
+    }
+    90%{
+        background-color:  #23a6d5;
+        
+    }
+    96%{
+        transform: rotate(0deg);
+        background-color: #23d5ab;
+    }
+    100% {
+      transform: rotate(-360deg);
+      background-color: #23d5ab;
+    }
+  }
+  @keyframes cabins1 {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  }
