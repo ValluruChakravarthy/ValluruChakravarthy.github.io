@@ -219,14 +219,14 @@ footer{
     }
         .inner,.outer{
             left:0;
-            min-height:85vw;
-        min-width:85vw;
+            min-height:93vw;
+        min-width:93vw;
         }
         #gameplay,#intro{
             left:0;
             font-size:10vw;
-            min-height:85vw;
-        min-width:85vw;
+            min-height:93vw;
+        min-width:93vw;
         }
         button[type="text"]{
             font-size:10vw;
