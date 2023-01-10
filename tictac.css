@@ -207,8 +207,8 @@ footer{
 }
 @media screen and (max-width:350px){
     html{
-        max-height:100vw;
-        max-width:80vw;
+        max-height:200px;
+        max-width:100px;
     }
     table{
         left:0;
