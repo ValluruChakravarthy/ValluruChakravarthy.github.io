@@ -55,6 +55,7 @@ function myfun1(w){
      var test=Math.floor(Math.random() * comp);
      
      if(document.getElementById(test).textContent == "X"){
+
      }
      else{
       document.getElementById(test).innerHTML = '0';
@@ -75,7 +76,7 @@ function myfun1(w){
       function myfun(w){
         if(win>0){
           document.getElementById(12345679).disabled = true;
-          alert("Game Over!!!! :)")
+          alert("Game Over!!!! :)");
         }
         else
         if(flag==1){
@@ -243,7 +244,8 @@ function myfun1(w){
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(3).style.backgroundColor='#181'; 
+          document.getElementById(3).style.backgroundColor='#181';
+        
           document.getElementById(5).style.backgroundColor='#181'; 
           document.getElementById(7).style.backgroundColor='#181'; 
         }
@@ -257,14 +259,16 @@ function myfun1(w){
 <div class="outer">
   <div class="inner">
     <button class="reset" onClick="relo()">Reset</button>
-    <button id="winner">winner:</button>
+    <button id="winner">Winner:</button>
     <div class="board">   
       <div id="gameplay" class="gameplay">
+        <h1>TIC TAC TOE</h1>
         <p id="game">Choose Game:</p>
           <br>
           <div id="setgameo">One-Player<button id="setgame" onclick="gameset() "></button>Two-Player<button id="setgame" onclick="gameset1()"></button>
             </div>
       </div>
+     
       <div id="intro" class="intro">
         <p id="choose">Choose your Player</p>
           <br>
@@ -272,6 +276,7 @@ function myfun1(w){
             X<button id="select" onclick="setX() "></button>
             </div>
       </div>
+      
       <table id="twop">
         
         <tr>
@@ -316,7 +321,9 @@ function myfun1(w){
         </tr>
     
       </table>
+      
     </div>
+    <p id="labe">TIC TAC TOE</p>
   </div>
 
 </p>
