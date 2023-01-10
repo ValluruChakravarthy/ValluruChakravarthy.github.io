@@ -75,7 +75,7 @@ position: relative;
   background: rgba(40,40,40,1)
     -moz-radial-gradient(center, rgb(61, 125, 94), rgba(0,20,20,.6));
     position:absolute;
-    overflow: visible;
+    overflow: hidden;
     height:25.8vw;
     width:25.8vw;
     margin: 0 auto;
@@ -90,7 +90,7 @@ position: relative;
 .gameplay{
     background-color: rgb(77, 171, 202);
     position:relative;
-    overflow: visible;
+    overflow: hidden;
     height:24.8vw;
     width:24.8vw;
     margin: 0 auto;
