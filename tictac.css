@@ -207,8 +207,8 @@ footer{
 }
 @media screen and (max-width:350px){
     html{
-        max-height:200px;
-        max-width:100px;
+        max-height:20px;
+        max-width:10px;
     }
     table{
         left:0;
@@ -216,6 +216,7 @@ footer{
           font-size: 10px;
         min-height:80vw;
         min-width:80vw;
+        padding: 4vw;
     }
         .inner,.outer{
             left:0;
@@ -230,8 +231,10 @@ footer{
         }
         button[type="text"]{
             font-size:10vw;
-            min-height:20vw;
-        min-width:20vw;
+            min-height:10vw;
+        min-width:10vw;
+        max-height: 35vw;
+        max-width: 35vw;
             left:-10%;
             padding:0;
         }
