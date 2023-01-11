@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" 
-        content="width=device-width, initial-scale=1">
+        content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tictac.css">
     <script>
       var flag=0,par=0,win=0;
@@ -20,7 +20,7 @@
             
           document.getElementById('gameplay').remove();
           document.getElementById('twop').remove();
-            document.getElementById('onep').style.zIndex(-3);
+    
         }
         function gameset1(){
           game=1;
@@ -44,32 +44,113 @@
           document.getElementById('intro').remove();
       }
 //Logic for One Player
-function myfun1(w){
-  if(win>0){
-          document.getElementById(12345679).disabled = true;
-          alert("Game Over!!!! :)")
-        }
-        else
-        if(flag==1){
-     document.getElementById(w).innerHTML = "X";
-     var test=Math.floor(Math.random() * comp);
-     
-     if(document.getElementById(test).textContent == "X"){
+  var comp=[1,2,3,4,5,6,7,8];
+  var rand=0;
+function random(i){
 
-     }
-     else{
-      document.getElementById(test).innerHTML = '0';
-      comp--;
-     }
-    
-     document.getElementById(w).disabled = true;
-        }
-        else if(flag==0){
-          document.getElementById(w).innerHTML = "0";
-          document.getElementById(w).disabled = true;
-        
-        }
+          console.log(i);
+  const rd = comp[Math.floor(Math.random() * i)+1];
+  console.log(comp);
+if(rd === "" || undefined){
+  random(i);
 }
+    return rd;
+}
+
+      function myfun1(w){
+        
+        if(win>0){
+          document.getElementById(12345679).disabled = true;
+          alert("Game Over!!!! :)");
+        }
+        else 
+        if(flag ==1) 
+        {
+          for(let g=0;g<comp.length;g++){
+            if(comp[g]==w){
+              console.log("dorikindi" +comp[g]);
+              console.log(w);
+              comp.splice(g,1);
+            }
+          }
+         
+          
+          const i=comp.length;
+            console.log("Length is "+i);
+          document.getElementById(w).innerHTML = "X";
+          
+          
+          console.log(comp);
+          if(i ==1){
+            console.log("onl yyne element");
+            document.getElementById(comp[0]).innerHTML = "0"; 
+          }
+          else{
+           rand = random(i);
+          
+          if(typeof rand){
+            document.getElementById(rand).innerHTML = "0"; 
+            console.log("0 Setted");
+              for(let g=0;g<comp.length;g++){
+                console.log("enter ayyam");
+            if(comp[g]==rand){
+              console.log("tesesam" +comp[g]);
+              comp.splice(g,1);
+            }
+            console.log(comp);
+          }
+            }
+            else{
+              myfun1(w);
+            }
+          }
+   
+}  
+else
+if(flag ==0) 
+        {
+          for(let g=0;g<comp.length;g++){
+            if(comp[g]==w){
+              console.log("dorikindi" +comp[g]);
+              console.log(w);
+              comp.splice(g,1);
+            }
+          }
+         
+          
+          const i=comp.length;
+            console.log("Length is "+i);
+          document.getElementById(w).innerHTML = "0";
+          
+          
+          console.log(comp);
+          if(i ==1){
+            console.log("onl yyne element");
+            document.getElementById(comp[0]).innerHTML = "X"; 
+          }
+          else{
+           rand = random(i);
+          
+          if(typeof rand){
+            document.getElementById(rand).innerHTML = "X"; 
+            console.log("0 Setted");
+              for(let g=0;g<comp.length;g++){
+                console.log("enter ayyam");
+            if(comp[g]==rand){
+              console.log("tesesam" +comp[g]);
+              comp.splice(g,1);
+            }
+            console.log(comp);
+          }
+            }
+            else{
+              myfun1(w);
+            }
+          }
+        }     
+        
+      }
+
       
        
 //Logic fr Two lpayer
@@ -112,6 +193,16 @@ function myfun1(w){
           document.getElementById(2).style.backgroundColor='#181'; 
           document.getElementById(3).style.backgroundColor='#181'; 
         }
+        else if(document.getElementById(3).textContent == 'X'){
+      if(document.getElementById(5).textContent == 'X' && document.getElementById(7).textContent == 'X')
+        {
+          document.getElementById('winner').innerHTML = "winner : X";
+          win++;
+          document.getElementById(3).style.backgroundColor='#181'; 
+          document.getElementById(5).style.backgroundColor='#181'; 
+          document.getElementById(77).style.backgroundColor='#181'; 
+        }
+      }
         else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X'){
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
@@ -200,6 +291,16 @@ function myfun1(w){
           document.getElementById(7).style.backgroundColor='#181'; 
         }
     }
+    else if(document.getElementById(3).textContent == '0'){
+      if(document.getElementById(5).textContent == '0' && document.getElementById(7).textContent == '0')
+        {
+          document.getElementById('winner').innerHTML = "winner : 0";
+          win++;
+          document.getElementById(3).style.backgroundColor='#181'; 
+          document.getElementById(5).style.backgroundColor='#181'; 
+          document.getElementById(7).style.backgroundColor='#181'; 
+        }
+      }
     else if(document.getElementById(9).textContent == '0'){
       if(document.getElementById(3).textContent == '0' && document.getElementById(6).textContent == '0')
         {
