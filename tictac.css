@@ -205,9 +205,9 @@ div[id="selecto"]{
 footer{
     margin:35%  auto auto 39%;
 }
-@media screen and (max-height:2340px){
+@media screen and (min-height:2340px){
     html{
-        max-height:300px;
+        max-height:100px;
     }
     table{
         left:0;
