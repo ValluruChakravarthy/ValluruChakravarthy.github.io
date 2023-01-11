@@ -7,7 +7,8 @@
 
 html{
     max-height:50vw;
-    background: rgba(20,20,20,10);
+    background:rgba(40,40,40,10);
+
 
 }
 table{
@@ -123,7 +124,7 @@ font-weight: bolder;
     padding:4vw;
     text-align:justify;
     color:orange;
-    font-family: 'Impact';
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS';
     color:rgb(255, 81, 0);
     letter-spacing: 0;
 }
@@ -207,84 +208,52 @@ div[id="selecto"]{
 footer{
     margin:35%  auto auto 39%;
 }
-@media screen and (min-height:2340px){
+@media screen and (max-width:550px){
     html{
-        max-height:100px;
+        max-height:20vw;
+        max-width:10vw;
     }
-    table{
-        left:0;
-            top:20%;
-          font-size: 10px;
-        min-height:80px;
-        min-width:80px;
-        padding: 4px;
+    h1{
+        font-size:8.5vw;
+        margin-top:5vw;
+        border:2vw solid;
+        border-radius:50%;
     }
-        .inner,.outer{
-            left:0;
-            min-height:95px;
-        min-width:95px;
-        }
-        #gameplay,#intro{
-            left:0;
-            font-size:10px;
-            min-height:93px;
-        min-width:93px;
-        }
-        button[type="text"]{
-            font-size:10px;
-            min-height:10px;
-        min-width:10px;
-        max-height: 35px;
-        max-width: 35px;
-            left:-10%;
-            padding:0;
-        }
-        table{
-            padding:10px;
-            left:0;
-        }
-        #winner,.reset{
-            min-height:6px;
-        min-width:15px;
-            font-size:4px;
-            top:1px;
-        }
-        p[id="labe"]{
-            font-size:0;
-        }
-}
-@media screen and (max-width:350px){
-    html{
-        max-height:20px;
-        max-width:10px;
-    }
-    table{
-        left:0;
-            top:20%;
-          font-size: 10px;
-        min-height:80vw;
-        min-width:80vw;
-        padding: 4vw;
-    }
+    
         .inner,.outer{
             left:0;
             min-height:93vw;
         min-width:93vw;
+          
         }
-        #gameplay,#intro{
+        #gameplay{
+              border:2vw solid black;
             left:0;
+            top:1.4vw;
             font-size:10vw;
-            min-height:93vw;
-        min-width:93vw;
+            min-height:77vw;
+        min-width:77vw;
         }
+    #intro{
+        left:7vw;
+        font-size:10vw;
+            min-height:77vw;
+        min-width:77vw;
+        border:2vw solid black;
+    }
+    table{
+        padding:4vw;
+        font-size:3vw;
+        text-align:center;
+    }
         button[type="text"]{
-            font-size:10vw;
+            font-size:13vw;
             min-height:10vw;
-        min-width:10vw;
-        max-height: 35vw;
-        max-width: 35vw;
-            left:-10%;
-            padding:0;
+        min-width:23vw;
+        min-height: 23vw;
+            overflow:hidden;
+            text-align:center;
+            border:1.5vw solid;
         }
         table{
             padding:10vw;
@@ -299,6 +268,41 @@ footer{
         p[id="labe"]{
             font-size:0;
         }
+    #setgameo{
+        font-size:5vw;
+        text-align:center;
+        padding-top:4vw;
+        text-align:center;
+        margin-top:-12vw;
+        gap:0;
+        display:block;
+        
+    }
+    #setgame{
+        
+        height:4vw;
+        width:4vw;
+      
+    }
+    #game{
+         font-size:7vw;
+        text-align:center;
+        padding-top:12vw;
+    }
+    #choose{
+        margin-top:6vw;
+        font-size:8vw;
+        border-radius:50vw;
+    }
+    #selecto{
+        font-size:8vw;
+        
+    }
+    #select{
+        height:6vw;
+        width:6vw;
+        
+    }
 }
     
 @keyframes cabins {
