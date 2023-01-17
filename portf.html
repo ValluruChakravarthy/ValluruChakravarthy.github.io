@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="1.jpg">
   <!-- 1.jpg will be that icon on website,see top-left -->
-  
+  <script>
+function fun(x) {
+  if (x.matches) { 
+    alert('less than it');
+  } else {
+    console.log("greater");
+  }
+}
+
+var x = window.matchMedia("(max-width: 500px)")
+fun(x) // Call listener function at run time
+x.addListener() // Attach listener function
+  </script>
   <style>
     header{
     position:fixed;
@@ -73,9 +85,11 @@
   #welcome-section{
     background:rgb(42, 42, 42);
     height:90vh;
+
   }
   #welcome{
   padding-top:25vh;
+
   }
   
   h1,h1:active{
@@ -94,6 +108,7 @@
       color:rgb(223, 223, 223);
       font-size:11vh;
   }
+  
 
  
   div[id="welcome"]>p{
@@ -289,6 +304,7 @@
     ul[id="toplist"]{ 
       text-align: center;
       padding-left: 10%;
+      
      flex-direction:column;
     }label{
       font-size:25px;
@@ -313,14 +329,45 @@
    
   }
   @media 
-  screen and (max-width: 450px) {
+  screen and (max-width: 550px) {
+   
     ul[id="toplist"]{ 
+      
      flex-direction:column;
     }label{
       font-size:25px;
+      
+    }
+    section[id="welcome-section"]{
+      min-width:590px;
+  
+    }
+    
+    #welcome{
+      font-size:20px;
+      min-width:200px;
+    }
+    div[id="welcome"]>p{
+     
+      font-family:Georgia;
+    letter-spacing:0.04em;
+   padding-left:2em;
+   max-width:25em;
+   font-size:5vw;
+   overflow:hidden;
+    }
+    h1[id="bravo"]:disabled{
+      color:yellow;
+    }
+    section[id="About"]>p{
+      max-width: 40px;
+    }
+    #About{
+      min-width: 560px;
+      overflow-x:inherit;
     }
     #Worked{
-    
+      min-width:502px;
    background:rgb(84, 88, 137);
     height:60vh;}
    
@@ -411,8 +458,10 @@
 
   <section id="welcome-section">
 
-<div id="welcome">
-    <h1>Hello  I'm Chakri!!!</h1>
+<div id="welcome" id="bravo">
+  
+    <h1 id="bravo">Hello  I'm Chakri!!!</h1>
+    
     <p><i>-I like Web-development</i ></p>
     </div>
     </section>
