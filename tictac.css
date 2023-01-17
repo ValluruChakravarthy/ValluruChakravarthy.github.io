@@ -8,7 +8,7 @@
 html{
     max-height:50vw;
     background:rgba(40,40,40,10);
-
+overflow: visible;
 
 }
 table{
@@ -208,10 +208,12 @@ div[id="selecto"]{
 footer{
     margin:35%  auto auto 39%;
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:650px){
     html{
+        
         max-height:20vw;
         max-width:10vw;
+        overflow: scroll;
     }
     h1{
         font-size:8.5vw;
@@ -221,12 +223,14 @@ footer{
     }
     
         .inner,.outer{
+            top:2vw;
             left:0;
             min-height:93vw;
         min-width:93vw;
           
         }
         #gameplay{
+            top:2vw;
               border:2vw solid black;
             left:0;
             top:1.4vw;
@@ -235,6 +239,7 @@ footer{
         min-width:77vw;
         }
     #intro{
+        
         left:7vw;
         font-size:10vw;
             min-height:77vw;
@@ -242,6 +247,7 @@ footer{
         border:2vw solid black;
     }
     table{
+        top:2vw;
         padding:4vw;
         font-size:3vw;
         text-align:center;
