@@ -28,7 +28,6 @@
          
           document.getElementById('gameplay').remove();
           document.getElementById('onep').remove();
-          document.getElementById('twop').style.zIndex(-3);
         }
         function setY(){
           document.getElementById('select').style.backgroundColor='#0a0';
@@ -44,12 +43,13 @@
           document.getElementById('intro').remove();
       }
 //Logic for One Player
-  var comp=[1,2,3,4,5,6,7,8];
+  var comp=[1,2,3,4,5,6,7,8,9];
   var rand=0;
 function random(i){
 
           console.log(i);
-  const rd = comp[Math.floor(Math.random() * i)+1];
+  const rd = comp[Math.floor(Math.random()*comp.length)];
+  console.log(rd+"MATH.fllor")
   console.log(comp);
 if(rd === "" || undefined){
   random(i);
@@ -84,6 +84,11 @@ if(rd === "" || undefined){
           if(i ==1){
             console.log("onl yyne element");
             document.getElementById(comp[0]).innerHTML = "0"; 
+          }
+          else if(i==0){
+            console.log('game finished');
+            mycheck(123456789);
+            mycheck1(123456789);
           }
           else{
            rand = random(i);
@@ -127,6 +132,11 @@ if(flag ==0)
           if(i ==1){
             console.log("onl yyne element");
             document.getElementById(comp[0]).innerHTML = "X"; 
+          }
+          else if(i==0){
+            console.log('game finished');
+            mycheck(123456789);
+            mycheck1(123456789);
           }
           else{
            rand = random(i);
@@ -291,6 +301,16 @@ if(flag ==0)
           document.getElementById(7).style.backgroundColor='#181'; 
         }
     }
+    if(document.getElementById(2).textContent== '2'){
+      if(document.getElementById(5).textContent == '5' && document.getElementById(8).textContent == '8')
+        {
+          document.getElementById('winner').innerHTML = "winner : 0";
+          win++;
+          document.getElementById(2).style.backgroundColor='#181'; 
+          document.getElementById(5).style.backgroundColor='#181'; 
+          document.getElementById(8).style.backgroundColor='#181'; 
+        }
+      }
     else if(document.getElementById(3).textContent == '0'){
       if(document.getElementById(5).textContent == '0' && document.getElementById(7).textContent == '0')
         {
