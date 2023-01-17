@@ -310,7 +310,196 @@ footer{
         
     }
 }
+
+ 
+@media screen and (max-width:550px){
+   
+    .inner,.outer{
+        top:14vw;
+        left:0;
+        min-height:93vw;
+    min-width:93vw;
+      
+    }
+    #gameplay{
+        top:14vw;
+          border:2vw solid black;
+        left:0;
+        top:1.4vw;
+        font-size:10vw;
+        min-height:77vw;
+    min-width:77vw;
+    }
+#intro{
     
+    left:7vw;
+    font-size:10vw;
+        min-height:77vw;
+    min-width:77vw;
+    border:2vw solid black;
+}
+table{
+    top:14vw;
+    top:2vw;
+    padding:16vw;
+    font-size:3vw;
+    text-align:center;
+}
+    button[type="text"]{
+        
+        font-size:13vw;
+        min-height:10vw;
+    min-width:23vw;
+    min-height: 23vw;
+        overflow:hidden;
+        text-align:center;
+        border:1.5vw solid;
+    }
+    table{
+        top:14vw;
+        padding:10vw;
+        left:0;
+    }
+    #winner,.reset{
+        min-height:6vw;
+    min-width:15vw;
+        font-size:4vw;
+        top:1vw;
+    }
+    p[id="labe"]{
+        font-size:0;
+    }
+#setgameo{
+    font-size:5vw;
+    text-align:center;
+    padding-top:4vw;
+    text-align:center;
+    margin-top:-12vw;
+    gap:0;
+    display:block;
+    
+}
+#setgame{
+    
+    height:4vw;
+    width:4vw;
+  
+}
+#game{
+     font-size:7vw;
+    text-align:center;
+    padding-top:12vw;
+}
+#choose{
+    margin-top:6vw;
+    font-size:8vw;
+    border-radius:50vw;
+}
+#selecto{
+    font-size:8vw;
+    
+}
+#select{
+    height:6vw;
+    width:6vw;
+    
+}
+}
+ 
+@media screen and (max-width:400px){
+   
+        .inner,.outer{
+            top:35vw;
+            left:0;
+            min-height:93vw;
+        min-width:93vw;
+          
+        }
+        #gameplay{
+            top:35vw;
+              border:2vw solid black;
+            left:0;
+            top:1.4vw;
+            font-size:10vw;
+            min-height:77vw;
+        min-width:77vw;
+        }
+    #intro{
+        
+        left:7vw;
+        font-size:10vw;
+            min-height:77vw;
+        min-width:77vw;
+        border:2vw solid black;
+    }
+    table{
+        top:35vw;
+        top:2vw;
+        padding:16vw;
+        font-size:3vw;
+        text-align:center;
+    }
+        button[type="text"]{
+            
+            font-size:13vw;
+            min-height:10vw;
+        min-width:23vw;
+        min-height: 23vw;
+            overflow:hidden;
+            text-align:center;
+            border:1.5vw solid;
+        }
+        table{
+            top:35vw;
+            padding:10vw;
+            left:0;
+        }
+        #winner,.reset{
+            min-height:6vw;
+        min-width:15vw;
+            font-size:4vw;
+            top:1vw;
+        }
+        p[id="labe"]{
+            font-size:0;
+        }
+    #setgameo{
+        font-size:5vw;
+        text-align:center;
+        padding-top:4vw;
+        text-align:center;
+        margin-top:-12vw;
+        gap:0;
+        display:block;
+        
+    }
+    #setgame{
+        
+        height:4vw;
+        width:4vw;
+      
+    }
+    #game{
+         font-size:7vw;
+        text-align:center;
+        padding-top:12vw;
+    }
+    #choose{
+        margin-top:6vw;
+        font-size:8vw;
+        border-radius:50vw;
+    }
+    #selecto{
+        font-size:8vw;
+        
+    }
+    #select{
+        height:6vw;
+        width:6vw;
+        
+    }
+}
+   
 @keyframes cabins {
     0%{
         background-color: #23d5ab;
