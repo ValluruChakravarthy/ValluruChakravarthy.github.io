@@ -58,7 +58,6 @@ if(rd === "" || undefined){
 }
 
       function myfun1(w){
-        
         if(win>0){
           document.getElementById(12345679).disabled = true;
           alert("Game Over!!!! :)");
@@ -157,7 +156,8 @@ if(flag ==0)
               myfun1(w);
             }
           }
-        }     
+        }
+        
         
       }
 
@@ -191,53 +191,64 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(9).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
         }
         else if(document.getElementById(2).textContent == 'X' && document.getElementById(3).textContent == 'X')
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(2).style.backgroundColor='#181'; 
-          document.getElementById(3).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(2).style.animation="1.2s winner infinite"; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
         }
+        else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X'){
+          document.getElementById('winner').innerHTML = "winner : X";
+          win++;
+
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(4).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
+        }
+      }
         else if(document.getElementById(3).textContent == 'X'){
       if(document.getElementById(5).textContent == 'X' && document.getElementById(7).textContent == 'X')
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(3).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(77).style.backgroundColor='#181'; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
       }
+      
         else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X'){
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
 
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(4).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(4).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
-    }
+    
     else if(document.getElementById(9).textContent == 'X'){
       if(document.getElementById(3).textContent == 'X' && document.getElementById(6).textContent == 'X')
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(9).style.backgroundColor='#181'; 
-          document.getElementById(3).style.backgroundColor='#181'; 
-          document.getElementById(6).style.backgroundColor='#181'; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
+          document.getElementById(6).style.animation="1.2s winner infinite"; 
         }
         else if(document.getElementById(8).textContent == 'X' && document.getElementById(7).textContent == 'X')
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(9).style.backgroundColor='#181'; 
-          document.getElementById(8).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
+          document.getElementById(8).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
       
     }
@@ -246,9 +257,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(2).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(8).style.backgroundColor='#181'; 
+          document.getElementById(2).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(8).style.animation="1.2s winner infinite"; 
         }
     }
     else if(document.getElementById(4).textContent == 'X'){
@@ -256,9 +267,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(4).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(6).style.backgroundColor='#181'; 
+          document.getElementById(4).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(6).style.animation="1.2s winner infinite"; 
         }
     }
     else if(document.getElementById(7).textContent == 'X'){
@@ -266,9 +277,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-          document.getElementById(3).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
     }
     
@@ -280,25 +291,25 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(9).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
         }
         else if(document.getElementById(2).textContent == '0' && document.getElementById(3).textContent == '0')
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(2).style.backgroundColor='#181'; 
-          document.getElementById(3).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(2).style.animation="1.2s winner infinite"; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
         }
         else if(document.getElementById(4).textContent == '0' && document.getElementById(7).textContent == '0'){
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
 
-          document.getElementById(1).style.backgroundColor='#181'; 
-          document.getElementById(4).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(1).style.animation="1.2s winner infinite"; 
+          document.getElementById(4).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
     }
     if(document.getElementById(2).textContent== '2'){
@@ -306,9 +317,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(2).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(8).style.backgroundColor='#181'; 
+          document.getElementById(2).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(8).style.animation="1.2s winner infinite"; 
         }
       }
     else if(document.getElementById(3).textContent == '0'){
@@ -316,9 +327,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(3).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
       }
     else if(document.getElementById(9).textContent == '0'){
@@ -326,17 +337,17 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(9).style.backgroundColor='#181'; 
-          document.getElementById(3).style.backgroundColor='#181'; 
-          document.getElementById(6).style.backgroundColor='#181'; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
+          document.getElementById(3).style.animation="1.2s winner infinite"; 
+          document.getElementById(6).style.animation="1.2s winner infinite"; 
         }
         else if(document.getElementById(8).textContent == '0' && document.getElementById(7).textContent == '0')
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(9).style.backgroundColor='#181'; 
-          document.getElementById(8).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(9).style.animation="1.2s winner infinite"; 
+          document.getElementById(8).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
       
     }
@@ -345,9 +356,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(2).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(8).style.backgroundColor='#181'; 
+          document.getElementById(2).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(8).style.animation="1.2s winner infinite"; 
         }
     }
     else if(document.getElementById(4).textContent == '0'){
@@ -355,9 +366,9 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : 0";
           win++;
-          document.getElementById(4).style.backgroundColor='#181'; 
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(6).style.backgroundColor='#181'; 
+          document.getElementById(4).style.animation="1.2s winner infinite"; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(6).style.animation="1.2s winner infinite"; 
         }
     }
     else if(document.getElementById(7).textContent == '0'){
@@ -367,16 +378,66 @@ if(flag ==0)
           win++;
           document.getElementById(3).style.backgroundColor='#181';
         
-          document.getElementById(5).style.backgroundColor='#181'; 
-          document.getElementById(7).style.backgroundColor='#181'; 
+          document.getElementById(5).style.animation="1.2s winner infinite"; 
+          document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
     }
   }
-    
+  function draw(){
+    if(win<1){
+          console.log('checking draw');
+          if(document.getElementById(1).textContent == 'X' ||document.getElementById(1).textContent == '0' ){
+            if(document.getElementById(2).textContent == 'X' ||document.getElementById(2).textContent == '0' ){
+              if(document.getElementById(3).textContent == 'X' ||document.getElementById(3).textContent == '0' ){
+                if(document.getElementById(4).textContent == 'X' ||document.getElementById(4).textContent == '0' ){
+                  if(document.getElementById(5).textContent == 'X' ||document.getElementById(5).textContent == '0' ){
+                    if(document.getElementById(6).textContent == 'X' ||document.getElementById(6).textContent == '0' ){
+                      if(document.getElementById(7).textContent == 'X' ||document.getElementById(7).textContent == '0' ){
+                        if(document.getElementById(8).textContent == 'X' ||document.getElementById(8).textContent == '0' ){
+                          if(document.getElementById(9).textContent == 'X' ||document.getElementById(9).textContent == '0' ){
+                            document.getElementById(1).style.animation="1.2s draw infinite";
+                            document.getElementById(2).style.animation="1.2s draw infinite";
+                            document.getElementById(3).style.animation="1.2s draw infinite";
+                            document.getElementById(4).style.animation="1.2s draw infinite"; 
+                            document.getElementById(5).style.animation="1.2s draw infinite";
+                            document.getElementById(6).style.animation="1.2s draw infinite"; 
+                            document.getElementById(7).style.animation="1.2s draw infinite";
+                            document.getElementById(8).style.animation="1.2s draw infinite";
+                            document.getElementById(9).style.animation="1.2s draw infinite";       
+          document.getElementById('winner').innerHTML = "winner :DRAW!";
+        }
+        }
+        }
+        }
+        }
+        }
+        }
+        }
+          }
+        }
+  }
   
-  
+
     </script>
 </head>
+<div class="wrapper">
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+  <div><span class="dot"></span></div>
+</div>
+ 
 <div class="outer">
   <div class="inner">
     <button class="reset" onClick="relo()">Reset</button>
@@ -386,36 +447,35 @@ if(flag ==0)
         <h1>TIC TAC TOE</h1>
         <p id="game">Choose Game:</p>
           <br>
-          <div id="setgameo">One-Player<button id="setgame" onclick="gameset() "></button>Two-Player<button id="setgame" onclick="gameset1()"></button>
+          <div id="setgameo"><button id="setgame" onclick="gameset() ">One-P</button><button id="setgame" onclick="gameset1()">Two-P</button>
             </div>
       </div>
      
       <div id="intro" class="intro">
         <p id="choose">Choose your Player</p>
           <br>
-          <div id="selecto">  O<button id="select" onclick="setY() "></button>
-            X<button id="select" onclick="setX() "></button>
+          <div id="selecto"><button id="select" onclick="setY()">O</button><button id="select" onclick="setX()">X</button>
             </div>
       </div>
       
       <table id="twop">
         
         <tr>
-          <td><button type="text" id=1 onclick=' myfun(1),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=2 onclick='myfun(2),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=3 onclick='myfun(3),mycheck(),mycheck1()'></button></td>
+          <td><button type="text" id=1 onclick=' myfun(1),mycheck(),mycheck1() ,draw()'></button></td>
+          <td><button type="text" id=2 onclick='myfun(2),mycheck(),mycheck1(),draw()'></button></td>
+          <td><button type="text" id=3 onclick='myfun(3),mycheck(),mycheck1(),draw()'></button></td>
           
         </tr>
         <tr>
-          <td><button type="text" id=4 onclick='myfun(4),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=5 onclick='myfun(5),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=6 onclick='myfun(6),mycheck(),mycheck1()'></button></td>
+          <td><button type="text" id=4 onclick='myfun(4),mycheck(),mycheck1(),draw()'></button></td>
+          <td><button type="text" id=5 onclick='myfun(5),mycheck(),mycheck1(),draw()'></button></td>
+          <td><button type="text" id=6 onclick='myfun(6),mycheck(),mycheck1(),draw()'></button></td>
           
         </tr>
         <tr>
-          <td><button type="text" id=7 onclick='myfun(7),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=8 onclick='myfun(8),mycheck(),mycheck1()'></button></td>
-          <td><button type="text" id=9 onclick='myfun(9),mycheck(),mycheck1()'></button></td>
+          <td><button type="text" id=7 onclick='myfun(7),mycheck(),mycheck1(),draw()'></button></td>
+          <td><button type="text" id=8 onclick='myfun(8),mycheck(),mycheck1(),draw()'></button></td>
+          <td><button type="text" id=9 onclick='myfun(9),mycheck(),mycheck1(),draw()'></button></td>
           
         </tr>
     
@@ -445,6 +505,7 @@ if(flag ==0)
       
     </div>
     <p id="labe">TIC TAC TOE</p>
+    
   </div>
 
 </p>
