@@ -278,16 +278,67 @@
   }
 /*Media queries*/
 @media 
-screen and (max-width: 150px) {
+screen and (max-width: 410px) {
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width:100vw;
+    overflow-x: hidden;
+overflow-y: hidden
+;
+  }
+ 
+#top-id{
+  text-align: center;
+  width:100%;
+}
   ul[id="toplist"]{ 
-   flex-direction:column;
-  }label{
+    font-size:22px;
+    margin: 0 auto;
+     display:flex;
+     padding-right: 2vw;
+     flex-direction: row;
+  }
+
+  #welcome-section{
+    width:100vw;
+    max-width: 100vw;
+  }  
+  #card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100vh;
+    max-width:100vw;
+    margin: 0 auto;
+    overflow-y: inherit;
+  }
+  label{
     font-size:25px;
   }
+  h1{
+      white-space:break-spaces;
+  }
+  div[id="social"]{
+      display:flex;
+     flex-wrap: wrap-reverse;
+     flex-direction: column;
+     color:pink;
+  }
+  div[id="card"]{
+    top:20vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 30vh;
+  }
   #Worked{
+  top:50vw;
   
  background:rgb(84, 88, 137);
-  height:60vh;}
+width:100vw relative;
+height: 10vh;}
  
 }
   @media 
@@ -300,7 +351,11 @@ screen and (max-width: 150px) {
     }label{
       font-size:25px;
     }
+    header{
+      width:100%;
+    }
     h1{
+      
         white-space:break-spaces;
     }
     div[id="social"]{
@@ -310,13 +365,14 @@ screen and (max-width: 150px) {
        color:pink;
     }
     #Worked{
-    
+    display: flex;
+    flex-direction: column;
+    gap:10vw;
    background:rgb(84, 88, 137);
-    height:10vh;}
+}
    
   }
- 
-  
+
   @media 
   screen and (max-width: 900px) {
     ul[id="toplist"]{ 
