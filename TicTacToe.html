@@ -189,8 +189,9 @@ if(flag ==0)
     if(document.getElementById(1).textContent== 'X'){
       if(document.getElementById(5).textContent == 'X' && document.getElementById(9).textContent == 'X')
         {
-          document.getElementById('winner').innerHTML = "winner : X";
+          document.getElementById('winner').innerHTML = "Winner : X";
           win++;
+          console.log('159');
           document.getElementById(1).style.animation="1.2s winner infinite"; 
 
           document.getElementById(5).style.animation="1.2s winner infinite"; 
@@ -200,22 +201,26 @@ if(flag ==0)
         {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
+          console.log('213');
           document.getElementById(1).style.animation="1.2s winner infinite"; 
           document.getElementById(2).style.animation="1.2s winner infinite"; 
           document.getElementById(3).style.animation="1.2s winner infinite"; 
         }
-        else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X'){
+        else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X')
+        {
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
-
+          console.log('147');
           document.getElementById(1).style.animation="1.2s winner infinite"; 
           document.getElementById(4).style.animation="1.2s winner infinite"; 
           document.getElementById(7).style.animation="1.2s winner infinite"; 
         }
+      
       }
         else if(document.getElementById(3).textContent == 'X'){
       if(document.getElementById(5).textContent == 'X' && document.getElementById(7).textContent == 'X')
         {
+          console.log('357');
           document.getElementById('winner').innerHTML = "winner : X";
           win++;
           document.getElementById(3).style.animation="1.2s winner infinite"; 
@@ -224,15 +229,6 @@ if(flag ==0)
         }
       }
       
-        else if(document.getElementById(4).textContent == 'X' && document.getElementById(7).textContent == 'X'){
-          document.getElementById('winner').innerHTML = "winner : X";
-          win++;
-
-          document.getElementById(1).style.animation="1.2s winner infinite"; 
-          document.getElementById(4).style.animation="1.2s winner infinite"; 
-          document.getElementById(7).style.animation="1.2s winner infinite"; 
-        }
-    
     else if(document.getElementById(9).textContent == 'X'){
       if(document.getElementById(3).textContent == 'X' && document.getElementById(6).textContent == 'X')
         {
@@ -386,7 +382,7 @@ if(flag ==0)
   function draw(){
     if(win<1){
           console.log('checking draw');
-          if(document.getElementById(1).textContent == 'X' ||document.getElementById(1).textContent == '0' ){
+          if(document.getElementById(1).textContent == '0' ||document.getElementById(1).textContent == 'X' ){
             if(document.getElementById(2).textContent == 'X' ||document.getElementById(2).textContent == '0' ){
               if(document.getElementById(3).textContent == 'X' ||document.getElementById(3).textContent == '0' ){
                 if(document.getElementById(4).textContent == 'X' ||document.getElementById(4).textContent == '0' ){
@@ -461,7 +457,7 @@ if(flag ==0)
       <table id="twop">
         
         <tr>
-          <td><button type="text" id=1 onclick=' myfun(1),mycheck(),mycheck1() ,draw()'></button></td>
+          <td><button type="text" id=1 onclick=' myfun(1),mycheck(),mycheck1(),draw()'></button></td>
           <td><button type="text" id=2 onclick='myfun(2),mycheck(),mycheck1(),draw()'></button></td>
           <td><button type="text" id=3 onclick='myfun(3),mycheck(),mycheck1(),draw()'></button></td>
           
