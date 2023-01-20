@@ -325,7 +325,7 @@ overflow-y: hidden
       display:flex;
      flex-wrap: wrap-reverse;
      flex-direction: column;
-     color:pink;
+     color:rgb(250, 173, 186);
   }
   div[id="card"]{
     top:20vw;
