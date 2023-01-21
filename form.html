@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Medical Appointment</title>
+<link rel="stylesheet" href="form.css">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <h1 id="title">Want to know more??💜💜💜</h1>
+  <p id="description">Please fill out the form and let me check it ASAP!!</p>
+ <form id="survey-form" action="mailto:valluru2000@gmail.com" method="post" enctype="text/plain">
+   <fieldset>
+     <label id="name-label">Name :<input type="text" id="name" required></label>
+    <label id="email-label">Email :<input type="email" id="email"  required></label>
+     <label id="number-label">Age :<input type="number"id="number" min=18 max=120 required></label>
+     
+     <div id="bra"></div>
+
+<label><p1>Choose your Consultation :</p1><input type="radio" class="optionz" name="type" value="ENT">Workouts</label>
+<label><input type="radio" class="optionz" name="type" value="Cardio">Life-Consultation</label>
+<label><input type="radio" class="optionz" name="type" value="gastro">Projects</label>
+<label><input type="radio" class="optionz" name="type" value="pulmo" >Best series in NETFLIX</label>
+
+<div id="bra"></div>
+<label for="profile-picture">Upload a profile picture or any docs?: <input id="profile-picture" type="file" name="file" /></label>
+<div id="bra"></div>
+<p1>Please choose your Location :</p1>
+<select id="dropdown">
+  <option value="5" class="binge">(Select)</option>
+<option value="1" class="binge">India</option>
+<option value="2" class="binge">U-YES-A</option>
+<option value="3" class="binge">Bing CHilling!!</option>
+<option value="4" class="binge">Ultra-tech Nooob Nation</option>
+  </select>
+
+  <div id="bra"></div>
+
+<p1>In addition to whom would you like to consider for</p1>
+<label><input type="checkbox" value=1 class="optionz">Step-bro</label>
+<label><input type="checkbox" value=2 class="optionz">Bro</label>
+<label><input type="checkbox" value=3 class="optionz">Sister</label>
+<label><input type="checkbox" value=4 class="optionz">Daddy</label>
+<label><input type="checkbox" value=5 class="optionz">GrandPapa</label>
+
+<div id="bra"></div>
+
+<p1>Please expalin us the patient's situation</p1>
+<textarea name="situation" class="textarea"placeholder="Mention about diet plan,symptoms,previous health records etc.."></textarea>
+
+<input type="submit" value="Submit" id="submit">
+   </form>
+  </body>
+
+</html>
