@@ -103,14 +103,15 @@ screen and (max-width: 1800px) {
     padding:2px;
   }
   
-  input[type="submit"] {
+  a[type="submit"] {
     display: block;
     width: 90%;
     margin: 2em auto;
     height: 1.2em;
     font-size: 1.1rem;
     background:rgb(62, 189, 125);
-  
+  text-decoration: none;
+  text-align: center;
     min-width: 200px;
     box-shadow: 0 0 1px rgb(118, 208, 163);
     color:white;
