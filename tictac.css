@@ -120,8 +120,7 @@ z-index:-1;
 
 }
 table{
-background-color: rgb(130, 170, 238);
-border-color: blueviolet;
+background-color: rgb(59, 159, 168);
 margin:0 auto;
 font-size: auto;
 height:30vw;
@@ -132,6 +131,8 @@ top:20%;
 padding:3.6vw;
 border-radius:10%;
 box-sizing: border-box;
+color:black;
+border-color:1vw solid black;
 }
 
 button[type="text"]{
@@ -143,17 +144,16 @@ button[type="text"]{
     color:rgb(0, 0, 0);
 font-size:auto;
 font-family: 'Segoe UI';
-border-color:black;
-    background: rgba(255, 146, 87, 0.4);
+    background: transparent;
 padding-bottom: 1vw;
 padding-top:0vw;
 font-size:6.3vw;
 font-family:monospace,sans-serif;
 font-weight: bold;
-border: 0.4vw solid black;
+border: 0.8px solid black;
 }
-button[type="text"]{
-    margin:0;
+button[type="text"]:active{
+    border: 0.8px solid black;
 }
 
 .inner{
@@ -350,16 +350,18 @@ footer{
 }
 
 @media screen and (max-width:840px){
-   
+  
     h1{
-        font-size:8.5vw;
-        margin-top:5vw;
-        border:2vw solid;
-        border-radius:50%;
+        font-size:6.5vw;
+        top:41vw;
+        border:1vw solid;
+        padding:1vw;
+        width:8.3em;
+       margin:4vw;
     }
     
         .inner,.outer{
-            top:2.3vw;
+            top:10.3vw;
             left:1.8vw;
             min-height:76vw;
         min-width:76vw;
@@ -374,8 +376,8 @@ footer{
             left:4vw;
         }
         #gameplay{
-            top:4.1vw;
-              border:2vw solid black;
+            top:8.1vw;
+              border:0.8vw solid black;
             left:2.6vw;
             top:4.4vw;
             font-size:1vw;
@@ -383,13 +385,17 @@ footer{
         min-width:66vw;
         padding:0.3vw;
         }
+        .intro>#choose{
+            font-size: 6.4vw;
+            padding:3.4vw;
+        }
     #intro{
         top:10vw;
         left:8.5vw;
-        font-size:10vw;
+        font-size:5vw;
             min-height:66vw;
         min-width:66vw;
-        border:2vw solid black;
+        border:0.8vw solid black;
     }
     .wrapper {
         height:140vw;
@@ -399,7 +405,7 @@ footer{
         position:fixed;
       }
     table{
-        top:4.3vw;
+        top:10.3vw;
         padding:13vw;
             left:7vw;
         font-size:3vw;
@@ -446,7 +452,8 @@ footer{
     #setgame{
        
         border:0.6vw solid black;
-        background: orangered;
+            background: linear-gradient(rgb(255, 179, 37),rgb(255, 94, 36));
+        
         height:10vw;
         width:24vw;
         font-size: 4vw;
@@ -467,10 +474,6 @@ footer{
         font-size:8vw;
         border-radius:50vw;
     }
-    #selecto{
-        font-size:8vw;
-        
-    }
     #select{
         height:6vw;
         width:6vw;
@@ -485,6 +488,7 @@ footer{
         border-radius:8%;
     left:34vw;
     }
+   
 }
 
 @media screen and (max-width:710px){
@@ -492,8 +496,8 @@ footer{
     h1{
         font-size:8.5vw;
         margin-top:5vw;
-        border:2vw solid;
-        border-radius:50%;
+        border:0.8vw solid;
+        width:8em;
     }
     
         .inner,.outer{
@@ -508,12 +512,12 @@ footer{
         }
         #gameplay{
             top:8.3vw;
-              border:2vw solid black;
+              border:0.8vw solid black;
             left:0;
             top:1.4vw;
             font-size:10vw;
-            min-height:77vw;
-        min-width:77vw;
+            min-height:82vw;
+        min-width:82vw;
         }
     #intro{
         
@@ -521,7 +525,7 @@ footer{
         font-size:10vw;
             min-height:77vw;
         min-width:77vw;
-        border:2vw solid black;
+        border:0.8vw solid black;
     }
     .wrapper {
         height:140vw;
@@ -578,9 +582,9 @@ footer{
     #setgame{
        
         border:0.6vw solid black;
-        background: orangered;
+            background: linear-gradient(90deg,rgb(255, 179, 37),rgb(255, 94, 36));
         height:10vw;
-        width:24vw;
+        width:22vw;
         font-size: 4vw;
         border-radius: 8%;
         font-weight: bold;
