@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipients = $_POST['recipients'];
     $situation = $_POST['situation'];
 
+
     // Compose the email message
     $to = "valluru2000@gmail.com"; 
     $subject = "New Medical Appointment Submission";
