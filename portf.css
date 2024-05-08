@@ -7,6 +7,34 @@
   scroll-behavior: smooth;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 5vh; /* Smaller font size on smaller screens */
+    }
+
+    #navbar {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    #projects a {
+        flex-direction: column;
+        width: 100%; /* Full width to use available space */
+    }
+
+    .card {
+        padding: 10px 0; /* Add padding around cards */
+    }
+
+    input, textarea {
+        width: 100%; /* Full width form elements */
+        margin: 10px 0; /* Spacing between form elements */
+    }
+}
+
 body {
   font-family: monospace, sans-serif;
   color: #e9e9e9;
