@@ -9,13 +9,13 @@
 
 body {
   font-family: monospace, sans-serif;
-  color: rgb(233, 233, 233);
-  background-color: rgb(42, 42, 42);
-  overflow: scroll;
+  color: #e9e9e9;
+  background-color: #2a2a2a;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
-  background-color: rgb(190, 42, 42);
+  background-color: #be2a2a;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -30,17 +30,19 @@ header {
 }
 
 #toplist li:hover {
-  background: rgb(63, 51, 196);
+  background: #3f33c4;
   padding: 10px;
+  border-radius: 5px;
 }
 
 #navbar a {
-  color: blanchedalmond;
+  color: #ffe4c4; /* Use a lighter color for better visibility */
 }
 
 #welcome-section {
   height: 90vh;
   padding-top: 25vh;
+  text-align: center; /* Center text in welcome section */
 }
 
 h1 {
@@ -52,11 +54,12 @@ h1 {
 div[id="welcome"] > p {
   animation: typing1 6s linear, blink-caret 0.75s step-end infinite reverse;
   padding-left: 20em;
-  color: red;
+  color: red; /* This might be hard to read, consider a different color */
 }
 
 #Work {
-  background: rgb(84, 88, 137);
+  background: #545889; /* Use a darker background color */
+  padding: 20px; /* Add some padding for better spacing */
 }
 
 #card {
@@ -67,23 +70,31 @@ div[id="welcome"] > p {
 
 #projects a {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.3s;
+  margin: 10px; /* Add margin for better spacing */
 }
 
 #projects img {
   width: 100%;
-  border-radius: 40px;
+  max-width: 300px; /* Limit image width for better responsiveness */
+  border-radius: 10px; /* Reduce border radius for consistency */
 }
 
 #social {
   display: flex;
-  justify-content: space-evenly;
-  padding: 7vh 8em 13vh 8em;
+  justify-content: center; /* Center social icons */
+  padding: 20px 0; /* Add some padding for better spacing */
 }
 
+#social a {
+  color: #ffe4c4; /* Use a lighter color for better visibility */
+  margin: 0 10px; /* Add margin for better spacing */
+}
+
+/* Responsive styles */
 @media (max-width: 900px) {
   #toplist {
     flex-direction: column;
@@ -92,6 +103,10 @@ div[id="welcome"] > p {
   #projects a {
     width: 100%;
     max-width: none;
+  }
+
+  div[id="welcome"] > p {
+    padding-left: 0; /* Remove padding for smaller screens */
   }
 }
 
