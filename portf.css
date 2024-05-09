@@ -385,7 +385,9 @@ ul[id="toplist"]{
     gap:10vw;
    background:rgb(84, 88, 137);
 }
-   
+   #bravo {
+  font-size: 5em;
+}
   }
 
   @media 
@@ -399,6 +401,9 @@ ul[id="toplist"]{
     
    background:rgb(84, 88, 137);
     height:120vh;}
+     #bravo {
+  font-size: 5em;
+}
    
   }
   @media 
@@ -410,7 +415,7 @@ ul[id="toplist"]{
       font-size:25px;
     }
     #bravo {
-  font-size: 20em;
+  font-size: 5em;
     }
     #Worked{
     
