@@ -46,8 +46,8 @@
     z-index:1;
 
   }
- p[id="ilike"]{
- font-size:10em;
+ #ilike{
+ font-size:10px;
  }
   #navbar{
     display:flex;
