@@ -1,77 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<title>Medical Appointment</title>
+<link rel="stylesheet" href="form.css">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Appointment</title>
-  <link rel="stylesheet" href="form.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
   <h1 id="title">Want to know more??💜💜💜</h1>
   <p id="description">Please fill out the form and let me check it ASAP!!</p>
-  
-  <form action="https://formspree.io/f/xeqydkjy" method="POST">
-    <fieldset>
-      <label for="name">Name: </label>
-      <input type="text" id="name" name="name" required>
+ <form action="https://formspree.io/f/xeqydkjy" method="POST" id ="survey-form">
+   <fieldset>
+     <label id="name-label">Name :<input type="text" id="name" required></label>
+    <label id="email-label">Email :<input type="email" id="email"  required></label>
+     <label id="number-label">Age :<input type="number"id="number" min=18 max=120 required></label>
+     
+     <div id="bra"></div>
 
-      <label for="email">Email: </label>
-      <input type="email" id="email" name="email" required>
+<label><p1>Choose your Consultation :</p1><input type="radio" class="optionz" name="type" value="ENT">Workouts</label>
+<label><input type="radio" class="optionz" name="type" value="Cardio">Life-Consultation</label>
+<label><input type="radio" class="optionz" name="type" value="gastro">Projects</label>
+<label><input type="radio" class="optionz" name="type" value="pulmo" >Best series in NETFLIX</label>
 
-      <label for="age">Age: </label>
-      <input type="number" id="age" name="age" min="18" max="120" required>
+<div id="bra"></div>
+<label for="profile-picture">Upload a profile picture or any docs?: <input id="profile-picture" type="file" name="file" /></label>
+<div id="bra"></div>
+<p1>Please choose your Location :</p1>
+<select id="dropdown">
+  <option value="5" class="binge">(Select)</option>
+<option value="1" class="binge">India</option>
+<option value="2" class="binge">U-YES-A</option>
+<option value="3" class="binge">Bing CHilling!!</option>
+<option value="4" class="binge">Ultra-tech Nooob Nation</option>
+  </select>
 
-      <div id="bra"></div>
+  <div id="bra"></div>
 
-      <label for="consultation">Choose your Consultation:</label><br>
-      <input type="radio" id="workouts" class="optionz" name="consultation" value="Workouts">
-      <label for="workouts">Workouts</label><br>
-      <input type="radio" id="life_consultation" class="optionz" name="consultation" value="Life-Consultation">
-      <label for="life_consultation">Life-Consultation</label><br>
-      <input type="radio" id="projects" class="optionz" name="consultation" value="Projects">
-      <label for="projects">Projects</label><br>
-      <input type="radio" id="best_series" class="optionz" name="consultation" value="Best series in NETFLIX">
-      <label for="best_series">Best series in NETFLIX</label><br>
+<p1>In addition to whom would you like to consider for</p1>
+<label><input type="checkbox" value=1 class="optionz">Step-bro</label>
+<label><input type="checkbox" value=2 class="optionz">Bro</label>
+<label><input type="checkbox" value=3 class="optionz">Sister</label>
+<label><input type="checkbox" value=4 class="optionz">Daddy</label>
+<label><input type="checkbox" value=5 class="optionz">GrandPapa</label>
 
-      <div id="bra"></div>
+<div id="bra"></div>
 
-      <label for="profile-picture">Upload a profile picture or any docs?</label>
-      <input id="profile-picture" type="file" name="file">
+<p1>Please expalin us the patient's situation</p1>
+<textarea name="situation" class="textarea"placeholder="Mention about diet plan,symptoms,previous health records etc.."></textarea>
 
-      <div id="bra"></div>
+<a type="submit" href="thanks.html">Submit</a>
 
-      <label for="location">Please choose your Location:</label>
-      <select id="location" name="location">
-        <option value="" disabled selected>(Select)</option>
-        <option value="India">India</option>
-        <option value="U-YES-A">U-YES-A</option>
-        <option value="Bing CHilling!!">Bing CHilling!!</option>
-        <option value="Ultra-tech Nooob Nation">Ultra-tech Nooob Nation</option>
-      </select>
+</form>
+   </form>
+  </body>
 
-      <div id="bra"></div>
-
-      <label>In addition to whom would you like to consider for</label><br>
-      <input type="checkbox" value="Step-bro" class="optionz" name="consideration[]">
-      <label for="step_bro">Step-bro</label><br>
-      <input type="checkbox" value="Bro" class="optionz" name="consideration[]">
-      <label for="bro">Bro</label><br>
-      <input type="checkbox" value="Sister" class="optionz" name="consideration[]">
-      <label for="sister">Sister</label><br>
-      <input type="checkbox" value="Daddy" class="optionz" name="consideration[]">
-      <label for="daddy">Daddy</label><br>
-      <input type="checkbox" value="GrandPapa" class="optionz" name="consideration[]">
-      <label for="grandpapa">GrandPapa</label><br>
-
-      <div id="bra"></div>
-
-      <label for="situation">Please explain the patient's situation:</label><br>
-      <textarea id="situation" name="situation" class="textarea" placeholder="Mention about diet plan, symptoms, previous health records etc.."></textarea>
-
-      <div id="bra"></div>
-
-      <button type="submit">Submit</button>
-    </fieldset>
-  </form>
-</body>
 </html>
