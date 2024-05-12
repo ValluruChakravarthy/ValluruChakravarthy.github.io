@@ -9,43 +9,65 @@
 <body>
   <h1 id="title">Want to know more??💜💜💜</h1>
   <p id="description">Please fill out the form and let me check it ASAP!!</p>
-  <form id="survey-form" action="https://formspree.io/f/xeqydkjy" method="POST">
+  <form action="https://formspree.io/f/xeqydkjy" method="POST">
     <fieldset>
-      <label id="name-label">Name: <input type="text" id="name" name="name" required></label>
-      <label id="email-label">Email: <input type="email" id="email" name="email" required></label>
-      <label id="number-label">Age: <input type="number" id="number" name="age" min="18" max="120" required></label>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="age">Age: </label>
+      <input type="number" id="age" name="age" min="18" max="120" required>
+
       <div id="bra"></div>
 
-      <label><p1>Choose your Consultation:</p1></label>
-      <label><input type="radio" class="optionz" name="consultation" value="ENT">Workouts</label>
-      <label><input type="radio" class="optionz" name="consultation" value="Cardio">Life-Consultation</label>
-      <label><input type="radio" class="optionz" name="consultation" value="gastro">Projects</label>
-      <label><input type="radio" class="optionz" name="consultation" value="pulmo">Best series in NETFLIX</label>
+      <label for="consultation">Choose your Consultation:</label><br>
+      <input type="radio" id="workouts" class="optionz" name="consultation" value="Workouts">
+      <label for="workouts">Workouts</label><br>
+      <input type="radio" id="life_consultation" class="optionz" name="consultation" value="Life-Consultation">
+      <label for="life_consultation">Life-Consultation</label><br>
+      <input type="radio" id="projects" class="optionz" name="consultation" value="Projects">
+      <label for="projects">Projects</label><br>
+      <input type="radio" id="best_series" class="optionz" name="consultation" value="Best series in NETFLIX">
+      <label for="best_series">Best series in NETFLIX</label><br>
+
       <div id="bra"></div>
 
-      <label for="profile-picture">Upload a profile picture or any docs?: <input id="profile-picture" type="file" name="file"></label>
+      <label for="profile-picture">Upload a profile picture or any docs?</label>
+      <input id="profile-picture" type="file" name="file">
+
       <div id="bra"></div>
 
-      <p1>Please choose your Location:</p1>
-      <select id="dropdown" name="location">
-        <option value="5" class="binge">(Select)</option>
-        <option value="1" class="binge">India</option>
-        <option value="2" class="binge">U-YES-A</option>
-        <option value="3" class="binge">Bing CHilling!!</option>
-        <option value="4" class="binge">Ultra-tech Nooob Nation</option>
+      <label for="location">Please choose your Location:</label>
+      <select id="location" name="location">
+        <option value="" disabled selected>(Select)</option>
+        <option value="India">India</option>
+        <option value="U-YES-A">U-YES-A</option>
+        <option value="Bing CHilling!!">Bing CHilling!!</option>
+        <option value="Ultra-tech Nooob Nation">Ultra-tech Nooob Nation</option>
       </select>
+
       <div id="bra"></div>
 
-      <p1>In addition to whom would you like to consider for</p1>
-      <label><input type="checkbox" value="Step-bro" class="optionz" name="consideration[]">Step-bro</label>
-      <label><input type="checkbox" value="Bro" class="optionz" name="consideration[]">Bro</label>
-      <label><input type="checkbox" value="Sister" class="optionz" name="consideration[]">Sister</label>
-      <label><input type="checkbox" value="Daddy" class="optionz" name="consideration[]">Daddy</label>
-      <label><input type="checkbox" value="GrandPapa" class="optionz" name="consideration[]">GrandPapa</label>
+      <label>In addition to whom would you like to consider for</label><br>
+      <input type="checkbox" value="Step-bro" class="optionz" name="consideration[]">
+      <label for="step_bro">Step-bro</label><br>
+      <input type="checkbox" value="Bro" class="optionz" name="consideration[]">
+      <label for="bro">Bro</label><br>
+      <input type="checkbox" value="Sister" class="optionz" name="consideration[]">
+      <label for="sister">Sister</label><br>
+      <input type="checkbox" value="Daddy" class="optionz" name="consideration[]">
+      <label for="daddy">Daddy</label><br>
+      <input type="checkbox" value="GrandPapa" class="optionz" name="consideration[]">
+      <label for="grandpapa">GrandPapa</label><br>
+
       <div id="bra"></div>
 
-      <p1>Please explain us the patient's situation</p1>
-      <textarea name="situation" class="textarea" placeholder="Mention about diet plan, symptoms, previous health records etc.."></textarea>
+      <label for="situation">Please explain the patient's situation:</label><br>
+      <textarea id="situation" name="situation" class="textarea" placeholder="Mention about diet plan, symptoms, previous health records etc.."></textarea>
+
+      <div id="bra"></div>
 
       <button type="submit">Submit</button>
     </fieldset>
