@@ -16,7 +16,6 @@
   }
   li[class="nav-list"]{
     margin-top:10px;
-    width:100vw;
   }
   #top-id{
     
@@ -57,7 +56,6 @@
   ul[id="toplist"]{
     font-size:22px;
     gap:2.2em;
-      width:100vh;
     padding-right:3em;
      display:flex;
     flex-wrap:row;
@@ -74,7 +72,7 @@
   }
   #welcome-section{
     background:rgb(42, 42, 42);
-    height:100vh;
+    height:90vh;
 
   }
   #welcome{
