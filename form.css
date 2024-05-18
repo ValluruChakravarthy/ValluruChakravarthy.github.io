@@ -11,9 +11,9 @@ body {
     color: #f5f6f7;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(45deg,#898dff,#89d2ff);
-    background-size: 600% 900%;
-    animation: gradient-animation 20s ease infinite;
+    background:linear-gradient(to right,rgb(208, 142, 255),rgb(118, 155, 255),rgb(123, 209, 255));
+    background-size: contain;
+    background-size: 200vw;
     
 }
 
