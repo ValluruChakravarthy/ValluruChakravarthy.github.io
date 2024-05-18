@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<title>Medical Appointment</title>
-<link rel="stylesheet" href="form.css">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Appointment</title>
+  <link rel="stylesheet" href="form.css">
 </head>
-
 <body>
-  <h1 id="title">Want to know more??💜💜💜</h1>
+  <h1 id="title">Need an appointment??💜💜💜</h1>
   <p id="description">Please fill out the form and let me check it ASAP!!</p>
- <form id="survey-form" href="thanks.html">
-   <fieldset>
-     <label id="name-label">Name :<input type="text" id="name" required></label>
-    <label id="email-label">Email :<input type="email" id="email"  required></label>
-     <label id="number-label">Age :<input type="number"id="number" min=18 max=120 required></label>
-     
-     <div id="bra"></div>
+  
+  <form id="survey-form" action="https://formspree.io/f/xeqydkjy" method="POST">
+    <fieldset>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required>
 
-<label><p1>Choose your Consultation :</p1><input type="radio" class="optionz" name="type" value="ENT">Workouts</label>
-<label><input type="radio" class="optionz" name="type" value="Cardio">Life-Consultation</label>
-<label><input type="radio" class="optionz" name="type" value="gastro">Projects</label>
-<label><input type="radio" class="optionz" name="type" value="pulmo" >Best series in NETFLIX</label>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="_replyto" required> <!-- Use _replyto for Formspree to reply to this email -->
 
-<div id="bra"></div>
-<label for="profile-picture">Upload a profile picture or any docs?: <input id="profile-picture" type="file" name="file" /></label>
-<div id="bra"></div>
-<p1>Please choose your Location :</p1>
-<select id="dropdown">
-  <option value="5" class="binge">(Select)</option>
-<option value="1" class="binge">India</option>
-<option value="2" class="binge">U-YES-A</option>
-<option value="3" class="binge">Bing CHilling!!</option>
-<option value="4" class="binge">Ultra-tech Nooob Nation</option>
-  </select>
+      <label for="number">Age: </label>
+      <input type="number" id="number" name="age" required>
 
-  <div id="bra"></div>
+      <div id="bra"></div>
 
-<p1>In addition to whom would you like to consider for</p1>
-<label><input type="checkbox" value=1 class="optionz">Step-bro</label>
-<label><input type="checkbox" value=2 class="optionz">Bro</label>
-<label><input type="checkbox" value=3 class="optionz">Sister</label>
-<label><input type="checkbox" value=4 class="optionz">Daddy</label>
-<label><input type="checkbox" value=5 class="optionz">GrandPapa</label>
+      <label for="type">Choose your Consultation:</label><br>
+      <input type="radio" id="ent" class="optionz" name="consultation" value="Cooking">
+      <label for="ent">Cooking</label><br>
+      <input type="radio" id="cardio" class="optionz" name="consultation" value="Workouts">
+      <label for="cardio">Workouts</label><br>
+      <input type="radio" id="gastro" class="optionz" name="consultation" value="My experiences">
+      <label for="gastro">My experiences</label><br>
+      <input type="radio" id="pulmo" class="optionz" name="consultation" value="My life">
+      <label for="pulmo">My life</label><br>
 
-<div id="bra"></div>
+      <div id="bra"></div>
 
-<p1>Please expalin us the patient's situation</p1>
-<textarea name="situation" class="textarea"placeholder="Mention about diet plan,symptoms,previous health records etc.."></textarea>
+      <label for="profile-picture">Upload a profile picture or any docs?</label>
+      <input type="file" id="profile-picture" name="file">
 
-<a type="submit" href="thanks.html">Submit</a>
+      <div id="bra"></div>
 
-</form>
-   </form>
-  </body>
+      <label for="location">Please choose your Location:</label>
+      <select id="location" name="location">
+        <option value="" disabled selected>(Select)</option>
+        <option value="India">India</option>
+        <option value="U-YES-A">U-YES-A</option>
+        <option value="Bing CHilling!!">Bing CHilling!!</option>
+        <option value="Ultra-tech Nooob Nation">Ultra-tech Nooob Nation</option>
+        <option value="United States">United States</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="France">France</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Russia">Russia</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Italy">Italy</option>
+        <option value="Australia">Australia</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Spain">Spain</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Poland">Poland</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Austria">Austria</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Iran">Iran</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Norway">Norway</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Israel">Israel</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Denmark">Denmark</option>
 
+    </select>
+
+    <!--  <div id="bra"></div>
+
+      <label>Do you have</label><br>
+      <input type="checkbox" value="Step-bro" class="optionz" name="consideration[]">
+      <label for="step_bro">Step-bro</label><br>
+      <input type="checkbox" value="Bro" class="optionz" name="consideration[]">
+      <label for="bro">Bro</label><br>
+      <input type="checkbox" value="Sister" class="optionz" name="consideration[]">
+      <label for="sister">Sister</label><br>
+      <input type="checkbox" value="Daddy" class="optionz" name="consideration[]">
+      <label for="daddy">Daddy</label><br>
+      <input type="checkbox" value="GrandPapa" class="optionz" name="consideration[]">
+      <label for="grandpapa">GrandPapa</label><br>
+
+      <div id="bra"></div>
+    -->
+
+      <label for="situation">Do you have any free advice for me?</label><br>
+      <textarea id="situation" name="situation" class="textarea" placeholder="Mention about diet plan, symptoms, previous health records etc.."></textarea>
+
+      <div id="bra"></div>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
 </html>
