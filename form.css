@@ -31,44 +31,43 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column; /* Stacking elements for mobile */
     background: white;
     border-radius: 2%;
     overflow: hidden;
-    max-width: 90vw; /* Adjusted for better display on smaller screens */
-    width: 90vw; /* Adjusted for better display on smaller screens */
-    margin: 6% auto;
-    padding: 2%;
+    max-width: 60vw;
+    width: 47vw;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .left-panel {
-    background: linear-gradient(270deg,#72ff4b,#c1ffbb);
+    background: linear-gradient(270deg, #72ff4b, #c1ffbb);
     color: rgb(26, 24, 24);
     padding: 2em;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    order: -1; /* For large screens, position the left panel at the bottom */
 }
 
 .left-panel h2 {
-    font-size: 5vw; /* Adjusted for better display on smaller screens */
+    font-size: 2vw;
 }
 
 .right-panel {
-    padding: 5vw 3vw; /* Adjusted padding for smaller screens */
+    padding: 3vw;
     width: 100%;
     border-style: ridge;
     border-color: #202020;
-    border-width: 0.6vw; /* Adjusted border width for smaller screens */
+    border-width: 1.2vw;
 }
 
 h1 {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-style: sans-serif;
 }
 
 p {
@@ -132,43 +131,30 @@ button {
 button:hover {
     background: #0a9cc4;
 }
-@media (max-width: 1080px) {
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-}
-/* Media query for tablets and smaller screens */
-@media (max-width: 768px) {
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
     .container {
-        max-width: 80vw;
-        width: 80vw;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        flex-direction: row;
+    }
+
+    .left-panel {
+        order: 2; /* Position left-panel at the bottom for larger screens */
     }
 
     .left-panel h2 {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     .right-panel {
-        padding: 4vw 2vw;
-        border-width: 0.8vw;
-    }
-
-    input, select, textarea, button {
-        padding: 8px;
-    }
-
-    button {
-        padding: 12px;
+        padding: 3vw;
     }
 }
 
 /* Media query for mobile phones */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .container {
+        flex-direction: column;
         max-width: 90vw;
         width: 90vw;
         margin-top: 12%;
@@ -177,6 +163,7 @@ button:hover {
 
     .left-panel {
         order: -1; /* Position left-panel at the top for mobile devices */
+        width: 100%;
     }
 
     .left-panel h2 {
