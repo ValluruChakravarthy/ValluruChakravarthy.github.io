@@ -134,31 +134,15 @@ button:hover {
 
 
 @media 
-screen and (max-width: 320px) {
-  *{
-    max-width: 100vw;
-    margin:0 auto;
-    left:-50px;
-    overflow-x: auto;
-  }
+screen and (max-width: 480px) {
+ 
   .left-panel{
-    display: none;
+    display:none;
   }
-}
-@media 
-screen and (max-width: 800px) {
-  *{
-    max-width: 550px;
-    margin:0 auto;
-    left:0;
-  }
-
-}
-@media 
-screen and (max-width: 1800px) {
-*{
-  max-width:700px;
-  margin:0 auto;
-  left:0;
-}
+ .container{
+    max-width:100vw;
+ }
+ .right-panel{
+    max-width: 100vw;
+ }
 }
