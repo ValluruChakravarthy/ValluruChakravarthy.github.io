@@ -503,7 +503,7 @@ label{
 }
 #welcome-section h1{
   white-space:break-spaces;
-  font-size:10vw;
+  font-size:8vw;
 }
 div[id="social"]{
   display:flex;
