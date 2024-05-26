@@ -479,7 +479,8 @@ ul[id="toplist"]{
 #welcome-section{
   min-width:40vw;
   min-height: 150vh;
-  overflow-wrap: break-word;
+  overflow-wrap:break-word;
+  font-size:auto;
 }  
 
 button[id="batton"],button[id="batton"]>a{
