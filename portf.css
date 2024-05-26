@@ -501,9 +501,9 @@ footer{
 label{
   font-size:25px;
 }
-h1{
+#welcome-section h1{
   white-space:break-spaces;
-  font-size:3em;
+  font-size:3vw;
 }
 div[id="social"]{
   display:flex;
