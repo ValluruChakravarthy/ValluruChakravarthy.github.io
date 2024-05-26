@@ -241,14 +241,7 @@ position:center;
 font-family:Verdana;
 }
 
-h5{
 
-  font-size: 8vw;
-  margin-bottom: 0.2vw;
-  color: #ffffff;
-  text-align: center;
-
-}
 
 #card {
 object-fit:inherit;
@@ -522,10 +515,12 @@ div[id="social"]{
   background-color: #8f7575ce;
   margin: 10px 0;
 }
-
-#work-experience h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+h2{
+  
+  font-size: 8vw;
+  margin-bottom: 0.2vw;
+  color: #ffffff;
+  text-align: center;
 }
 
 .job {
