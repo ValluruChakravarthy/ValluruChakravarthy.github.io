@@ -481,7 +481,7 @@ ul[id="toplist"]{
 }
 #welcome-section{
   min-width:40vw;
-  min-height: 150vh;
+  min-height: 180vh;
   overflow-wrap:break-word;
   font-size:auto;
 }  
@@ -503,7 +503,7 @@ label{
 }
 h1{
   white-space:break-spaces;
-  font-size:8em;
+  font-size:3em;
 }
 div[id="social"]{
   display:flex;
