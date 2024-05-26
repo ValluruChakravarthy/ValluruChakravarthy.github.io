@@ -481,7 +481,7 @@ ul[id="toplist"]{
 }
 #welcome-section{
   min-width:40vw;
-  min-height: 110vh;
+  min-height: 70vh;
   overflow-wrap:break-word;
   font-size:auto;
 }  
