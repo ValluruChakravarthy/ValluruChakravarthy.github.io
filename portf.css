@@ -517,7 +517,7 @@ div[id="social"]{
   margin: 10px 0;
 }
 #cloud-button {
-  background-color: #67d4ff;
+  background-color: #9567ff;
   border: none;
   color: rgb(0, 0, 0);
   padding: 2vw 1.5vw;
@@ -533,6 +533,7 @@ h2{
   margin-bottom: 0.2vw;
   color: #ffffff;
   text-align: center;
+  width:40%;
 }
 
 .job {
