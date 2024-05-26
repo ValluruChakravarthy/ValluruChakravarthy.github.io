@@ -241,13 +241,13 @@ position:center;
 font-family:Verdana;
 }
 
-section#Worked h2{
+h5{
 
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 8vw;
+  margin-bottom: 1vw;
   color: #444;
   text-align: center;
-  text-transform: uppercase;
+
 }
 
 #card {
