@@ -516,9 +516,20 @@ div[id="social"]{
   background-color: #8f7575ce;
   margin: 10px 0;
 }
+#cloud-button {
+  background-color: #67d4ff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 2vw 1.5vw;
+  font-size: 9vw;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
 h2{
   
-  font-size: 8vw;
+  font-size: 3vw;
   margin-bottom: 0.2vw;
   color: #ffffff;
   text-align: center;
