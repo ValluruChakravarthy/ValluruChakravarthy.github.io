@@ -77,11 +77,12 @@ scroll-behavior:smooth;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
-  
+ 
   .animate.visible, .animated-img.visible {
     opacity: 1;
     transform: translateY(0);
   }
+
   
   .animated-img {
     width: 12vw;
@@ -99,14 +100,14 @@ scroll-behavior:smooth;
 
   main section#work-experience .job-images {
     display: grid;
-    width: 30%;
+    width: 35%;
     grid-template-columns: 50% 50%;
     gap:0.2vw;
   }
   
   main section#work-experience .job-images2 {
     display: grid;
-    width: 30%;
+    width: 35%;
     grid-template-columns: 50% 50%; 
 
   }
@@ -124,7 +125,7 @@ margin-top:10px;
   font-size:27px;
   font-family:monospace,sans-serif;
 
-color:rgb(48, 44, 38);
+color:rgb(1, 1, 1);
 background-color: rgba(253, 253, 253, 0.491);
 }
 html {
@@ -136,12 +137,12 @@ margin:0;
 overflow:scroll;
 }
 a{
-color:rgb(77, 71, 56);
+color:rgb(245, 245, 245);
 height:8vh;
 width:100vw;
 }
 header{
-background-color:rgba(252, 252, 252, 0.79);
+background-color:rgba(0, 0, 0, 0.79);
 width:98.8vw;
 color:rgb(0, 0, 0);;
 z-index:1;
@@ -167,12 +168,12 @@ font-family:Monospace,Monospace;
 
 ul[id="toplist"]>li:hover{
 
-background:rgb(255, 233, 233);
+background:rgba(253, 253, 253, 0.491);
 padding:10px;
 margin:0;
 }
 #welcome-section{
-background:rgb(42, 42, 42);
+background:rgb(245, 245, 245);
 height:90vh;
 
 }
@@ -194,7 +195,7 @@ letter-spacing: 0.04em;
 animation: 
   typing 2.5s steps(22,end),
   blink-caret .75s step-end infinite;
-  color:rgb(223, 223, 223);
+  color:rgb(0, 0, 0);
   font-size:11vh;
 }
 
@@ -250,6 +251,37 @@ gap: 10vh;
 max-width:100%;
 margin: 0 auto;
 border-radius: 10px;
+
+}
+
+#cloud-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#cloud-button {
+  background-color: #67d4ff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 1vw 1.5vw;
+  font-size: 3vw;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+#cloud-button:after {
+  width: 40px;
+  height: 40px;
+  top: -30px;
+  left: -10px;
+}
+
+#cloud-button:hover {
+  background-color: #00BFFF;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #projects label{
@@ -343,7 +375,7 @@ font-size:30px;
 text-align:center;
 padding:2.5vh;
 background:rgb(146, 149, 160);
-color:rgb(35, 34, 34);
+color:rgb(199, 199, 199);
 }
 #social{
 
@@ -356,6 +388,7 @@ font-size:26px;
 font-family:Monospace;
 transition:0.5s;
 position:calc(font-size,transition);
+color:rgb(255, 255, 255);
 }
 #social a:hover{
 font-size:32px;
@@ -786,6 +819,7 @@ ul[id="toplist"]{
   }
   #Worked{
     min-width:68vw;
+    min-height:350vh;
   }
   footer{
     min-width: 100vw;
@@ -846,7 +880,7 @@ ul[id="toplist"]{
     #Worked{
     
    background:rgb(84, 88, 137);
-    height:120vh;}
+    height:350vh;}
    
   }
   @media 
@@ -877,7 +911,7 @@ ul[id="toplist"]{
     #Worked{
     
    background:rgb(84, 88, 137);
-    height:350vh;}
+    height:200vh;}
    i,p[id="About"]{
      background:rgb(46, 49, 60);
    }
