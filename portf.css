@@ -503,6 +503,7 @@ label{
 }
 h1{
   white-space:break-spaces;
+  font-size:8em;
 }
 div[id="social"]{
   display:flex;
