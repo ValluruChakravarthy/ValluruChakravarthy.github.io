@@ -241,6 +241,15 @@ position:center;
 font-family:Verdana;
 }
 
+section#Worked h2{
+
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #card {
 object-fit:inherit;
 display: flex;
@@ -257,6 +266,7 @@ border-radius: 10px;
 #cloud-button-container {
   text-align: center;
   margin-top: 20px;
+  color:black;
 }
 
 #cloud-button {
