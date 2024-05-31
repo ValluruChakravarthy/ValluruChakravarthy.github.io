@@ -1,4 +1,12 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    background-color: chocolate;
+}
+
+canvas{
+    border-style: double;
+    border-color: rgb(143, 255, 160);
+    border-radius: 5%;
+    border-width: 3vw;
 }
