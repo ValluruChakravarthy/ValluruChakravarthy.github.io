@@ -4,9 +4,26 @@ body {
     background-color: chocolate;
 }
 
-canvas{
+canvas {
     border-style: double;
     border-color: rgb(143, 255, 160);
     border-radius: 5%;
     border-width: 3vw;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: lime;
+    color: black;
+    cursor: pointer;
 }
