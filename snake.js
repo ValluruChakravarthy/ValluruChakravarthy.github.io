@@ -1,10 +1,9 @@
-
 //board
 var blockSize = 25;
 var rows = 20;
 var cols = 20;
 var board;
-var context; 
+var context;
 
 //snake head
 var snakeX = blockSize * 5;
@@ -21,27 +20,34 @@ var foodY;
 
 var gameOver = false;
 
+var touchStartX = 0;
+var touchStartY = 0;
+var touchEndX = 0;
+var touchEndY = 0;
+
 window.onload = function() {
     board = document.getElementById("board");
     board.height = rows * blockSize;
     board.width = cols * blockSize;
-    context = board.getContext("2d"); 
+    context = board.getContext("2d");
 
     placeFood();
     document.addEventListener("keyup", changeDirection);
-    // update();
-    setInterval(update, 3000/10); 
-}
+    board.addEventListener("touchstart", handleTouchStart, false);
+    board.addEventListener("touchmove", handleTouchMove, false);
+    board.addEventListener("touchend", handleTouchEnd, false);
+    setInterval(update, 3000 / 10);
+};
 
 function update() {
     if (gameOver) {
         return;
     }
 
-    context.fillStyle="black";
+    context.fillStyle = "black";
     context.fillRect(0, 0, board.width, board.height);
 
-    context.fillStyle="red";
+    context.fillStyle = "red";
     context.fillRect(foodX, foodY, blockSize, blockSize);
 
     if (snakeX == foodX && snakeY == foodY) {
@@ -49,14 +55,14 @@ function update() {
         placeFood();
     }
 
-    for (let i = snakeBody.length-1; i > 0; i--) {
-        snakeBody[i] = snakeBody[i-1];
+    for (let i = snakeBody.length - 1; i > 0; i--) {
+        snakeBody[i] = snakeBody[i - 1];
     }
     if (snakeBody.length) {
         snakeBody[0] = [snakeX, snakeY];
     }
 
-    context.fillStyle="lime";
+    context.fillStyle = "lime";
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
@@ -65,7 +71,7 @@ function update() {
     }
 
     //game over conditions
-    if (snakeX < 0 || snakeX > cols*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
+    if (snakeX < 0 || snakeX >= cols * blockSize || snakeY < 0 || snakeY >= rows * blockSize) {
         gameOver = true;
         alert("Game Over");
     }
@@ -82,23 +88,54 @@ function changeDirection(e) {
     if (e.code == "ArrowUp" && velocityY != 1) {
         velocityX = 0;
         velocityY = -1;
-    }
-    else if (e.code == "ArrowDown" && velocityY != -1) {
+    } else if (e.code == "ArrowDown" && velocityY != -1) {
         velocityX = 0;
         velocityY = 1;
-    }
-    else if (e.code == "ArrowLeft" && velocityX != 1) {
+    } else if (e.code == "ArrowLeft" && velocityX != 1) {
         velocityX = -1;
         velocityY = 0;
-    }
-    else if (e.code == "ArrowRight" && velocityX != -1) {
+    } else if (e.code == "ArrowRight" && velocityX != -1) {
         velocityX = 1;
         velocityY = 0;
     }
 }
 
-
 function placeFood() {
     foodX = Math.floor(Math.random() * cols) * blockSize;
     foodY = Math.floor(Math.random() * rows) * blockSize;
+}
+
+function handleTouchStart(e) {
+    const touch = e.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+}
+
+function handleTouchMove(e) {
+    const touch = e.touches[0];
+    touchEndX = touch.clientX;
+    touchEndY = touch.clientY;
+}
+
+function handleTouchEnd() {
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0 && velocityX != -1) {
+            velocityX = 1;
+            velocityY = 0;
+        } else if (deltaX < 0 && velocityX != 1) {
+            velocityX = -1;
+            velocityY = 0;
+        }
+    } else {
+        if (deltaY > 0 && velocityY != -1) {
+            velocityX = 0;
+            velocityY = 1;
+        } else if (deltaY < 0 && velocityY != 1) {
+            velocityX = 0;
+            velocityY = -1;
+        }
+    }
 }
