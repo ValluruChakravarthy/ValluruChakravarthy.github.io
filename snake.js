@@ -33,9 +33,9 @@ window.onload = function() {
 
     placeFood();
     document.addEventListener("keyup", changeDirection);
-    board.addEventListener("touchstart", handleTouchStart, false);
-    board.addEventListener("touchmove", handleTouchMove, false);
-    board.addEventListener("touchend", handleTouchEnd, false);
+    board.addEventListener("touchstart", handleTouchStart, { passive: false });
+    board.addEventListener("touchmove", handleTouchMove, { passive: false });
+    board.addEventListener("touchend", handleTouchEnd, { passive: false });
     setInterval(update, 3000 / 10);
 };
 
@@ -106,18 +106,21 @@ function placeFood() {
 }
 
 function handleTouchStart(e) {
+    e.preventDefault();
     const touch = e.touches[0];
     touchStartX = touch.clientX;
     touchStartY = touch.clientY;
 }
 
 function handleTouchMove(e) {
+    e.preventDefault();
     const touch = e.touches[0];
     touchEndX = touch.clientX;
     touchEndY = touch.clientY;
 }
 
-function handleTouchEnd() {
+function handleTouchEnd(e) {
+    e.preventDefault();
     const deltaX = touchEndX - touchStartX;
     const deltaY = touchEndY - touchStartY;
 
