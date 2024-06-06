@@ -244,7 +244,7 @@ header {
             const floatingCloudContainer = document.getElementById('floatingCloudContainer');
             const floatingCloud = document.getElementById('floatingCloud');
             const cloudImages = [
-                'first_me.png',  // Replace these with the actual paths to your images
+                'first_me.png',  
                 'skills.png',
                 '/mnt/data/image.png'
             ];
@@ -253,14 +253,14 @@ header {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const index = Array.from(sections).indexOf(entry.target);
-                        floatingCloudContainer.style.opacity = 0; // Start by fading out
+                        floatingCloudContainer.style.opacity = 0; 
                         setTimeout(() => {
                             floatingCloud.src = cloudImages[index];
-                            floatingCloudContainer.style.opacity = 1; // Fade back in with new image
-                        }, 1000); // Match this timeout with the CSS transition duration
+                            floatingCloudContainer.style.opacity = 1; 
+                        }, 1000); 
                     }
 
-                    // Hide floating cloud when the "My Certifications" section is in view
+                   //hide this yo
                     if (entry.target.id === 'certifications' && entry.isIntersecting) {
                         floatingCloudContainer.style.display = 'none';
                     } else if (entry.target.id === 'certifications' && !entry.isIntersecting) {
@@ -275,7 +275,7 @@ header {
                 observer.observe(section);
             });
 
-            // Slider functionality
+       //slide this yo
             const slider = document.getElementById('certificationsSlider');
             const sliderContent = slider.querySelector('.slider-content');
             const sliderItems = slider.querySelectorAll('.slider-item');
