@@ -222,7 +222,7 @@ header {
                 </div>
             </section>
 
-            <section class="section" data-aos="fade-up">
+            <section class="section" data-aos="fade-up" id="ending">
                 <div class="content">
                     <footer id="Contact">
             <section id="About">
@@ -276,6 +276,9 @@ header {
                     } else if (entry.target.id === 'certifications' && !entry.isIntersecting) {
                         floatingCloudContainer.style.display = 'block';
                     }
+                    else if (entry.target.id === 'ending'&& entry.isIntersecting) {
+                        floatingCloudContainer.style.display = 'none';
+                }
                 });
             }, {
                 threshold: 0.5
