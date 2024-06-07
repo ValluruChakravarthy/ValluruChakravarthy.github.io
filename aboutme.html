@@ -13,6 +13,7 @@
             padding: 0;
             overflow: scroll; 
         }
+        
         .container {
             width: 100%;
             padding: 0;
@@ -123,10 +124,11 @@ header {
 .slider {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    margin:0 auto;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the slider horizontally */
     overflow: hidden;
 }
+
 .slider-content {
     display: flex;
     margin: 0;
@@ -159,6 +161,14 @@ header {
         #social{
             display:flex;
             margin:1vw 0;
+        }
+        #certifications{
+          text-align: center;
+          margin-left: 30%;
+          max-width: 50%;
+        }
+        .slider{
+            width:150%
         }
     </style>
 </head>
@@ -243,80 +253,33 @@ header {
     </section>
     <section>
         <div class="floating-cloud" id="floatingCloudContainer">
-            <img src="/mnt/data/image.png" alt="Floating Cloud" id="floatingCloud">
+            <img src="/mnt/data/image.png" alt="Floating Cloud">
         </div>
     </section>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            const floatingCloudContainer = document.getElementById('floatingCloudContainer');
-            const floatingCloud = document.getElementById('floatingCloud');
-            const cloudImages = [
-                'first_me.png',  
-                'skills2.png',
-            ];
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const index = Array.from(sections).indexOf(entry.target);
-                        floatingCloudContainer.style.opacity = 0; 
-                        setTimeout(() => {
-                            floatingCloud.src = cloudImages[index];
-                            floatingCloudContainer.style.opacity = 1; 
-                        }, 1000); 
-                    }
+        const slider = document.querySelector('.slider-content');
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
 
-                   //hide this yo
-                    if (entry.target.id === 'certifications' && entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'none';
-                    } else if (entry.target.id === 'certifications' && !entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'block';
-                    }
-                    else if (entry.target.id === 'ending'&& entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'none';
-                }
-                });
-            }, {
-                threshold: 0.5
-            });
+        let currentIndex = 0;
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+        function showSlide(index) {
+            const offset = -index * 100;
+            slider.style.transform = `translateX(${offset}%)`;
+        }
 
-       //slide this yo
-            const slider = document.getElementById('certificationsSlider');
-            const sliderContent = slider.querySelector('.slider-content');
-            const sliderItems = slider.querySelectorAll('.slider-item');
-            const prevButton = slider.querySelector('.prev');
-            const nextButton = slider.querySelector('.next');
-            let currentIndex = 0;
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderItems.length - 1;
+            showSlide(currentIndex);
+        });
 
-            function showSlide(index) {
-                const totalSlides = sliderItems.length;
-                if (index >= totalSlides) {
-                    currentIndex = 0;
-                } else if (index < 0) {
-                    currentIndex = totalSlides - 1;
-                } else {
-                    currentIndex = index;
-                }
-                sliderContent.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            prevButton.addEventListener('click', () => {
-                showSlide(currentIndex - 1);
-            });
-
-            nextButton.addEventListener('click', () => {
-                showSlide(currentIndex + 1);
-            });
-
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
             showSlide(currentIndex);
         });
     </script>
