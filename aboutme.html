@@ -18,11 +18,12 @@
             padding: 0;
         }
         .content {
-            width: 55%;
-            margin: 0.3vw;
+            width: 65%;
+            margin: 0.6vw;
             font-size: 2.2vw;
-            padding: 1.4vw;
+            padding: 1.2vw;
             text-align: left;
+            min-height: 65vh;
         }
         .section {
             padding: 50px 0;
@@ -155,10 +156,25 @@ header {
     padding: 10px;
     cursor: pointer;
 }
-        #social{
-            display:flex;
-            margin:1vw 0;
-        }
+.content #social{
+display: flex;
+flex-direction: row;
+margin:0 10%;
+width:80vw;
+font-family:Monospace rgb(255, 255, 255);
+gap:3vw;
+font-family:Lucida;
+font-size: 3vw;
+max-height: 2vh;
+}
+#social a:hover{
+    transform:translate3d(1,1,1);
+    color:rgb(112, 112, 255);
+    font-family:Monospace;
+}
+a{
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
@@ -180,8 +196,9 @@ header {
                 <div class="content">
                     <h1>About Me</h1>
                     <p>I'm Chakravarthy</p>
-                    <p>I'm a Software developer, worked on Oracle cloud for 2 years</p>
-                    <p>Currently Masters student at Missouri S&T</p>
+                    <p>I'm a Software developer, worked on Oracle cloud for 2 years.Currently Masters student at Missouri S&T.</p>
+                    <p>Database management, Application development,Cloud technologies,front-ends</p>
+                    <p>Improvised several development requirements and handled Application and Data Integration related issue</p>
                 </div>
             </section>
 
