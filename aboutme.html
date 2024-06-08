@@ -266,6 +266,8 @@ header {
         const sliderItems = document.querySelectorAll('.slider-item');
         const prevButton = document.querySelector('.prev');
         const nextButton = document.querySelector('.next');
+        const floatingCloud = document.getElementById('floatingCloudContainer');
+        const sections = document.querySelectorAll('.section');
 
         let currentIndex = 0;
 
@@ -283,6 +285,22 @@ header {
             currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
             showSlide(currentIndex);
         });
+
+   
+        function toggleFloatingCloud() {
+            const firstSectionHeight = sections[0].offsetHeight;
+            const secondSectionHeight = sections[1].offsetHeight;
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition < (firstSectionHeight + secondSectionHeight)) {
+                floatingCloud.style.opacity = 1;
+            } else {
+                floatingCloud.style.opacity = 0;
+            }
+        }
+
+        window.addEventListener('scroll', toggleFloatingCloud);
+        window.addEventListener('load', toggleFloatingCloud);
     </script>
 </body>
 </html>
