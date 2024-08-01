@@ -643,9 +643,9 @@ transition:0.4s ease-in-out;
 overflow: visible;
 }
 .dropdown a:hover{
-  background-color: var(--second-bg-color);
+ box-shadow: #00bbd8;
   width:100%;
-  transform:scale(4.05);
+  transform:scale(1.05);
   color:white;
 }
 .dropdown a{
@@ -810,5 +810,87 @@ h2{
 .logo3{
   min-width:3rem;
   max-height:5rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+  }
+
+  header h1 {
+      font-size: 20px;
+  }
+
+  header nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav a {
+      margin: 10px 0;
+  }
+
+  .projects {
+      padding: 10px;
+  }
+
+  .project-card {
+      width: 90%;
+  }
+
+  .project-card img {
+      width: 100%;
+  }
 }
 }

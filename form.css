@@ -142,15 +142,6 @@ button:hover {
    }
    .container{
     overflow: auto;
-    min-width: 88vw;
-    background: none;
-    color:rgb(188, 188, 188);
+    width: 100vw;
    }
-   input, select, textarea, button{
-    background: transparent;
-   }
-   label,p,h1{
-    color:rgb(255, 255, 255);
-   }
-
 }
