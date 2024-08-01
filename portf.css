@@ -699,6 +699,33 @@ grid-template-columns: repeat(1,1fr);
 }
 }
 @media (max-width:410px) {
+  *{
+    /*Somethings in the way*/
+     /*Somethings in the way*/
+      /*Somethings in the way*/
+       /*Somethings in the way*/
+        /*Somethings in the way*/
+         /*Somethings in the way*/
+    margin:0;
+  padding:0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border:none;
+  outline:none;
+  scroll-behavior: smooth;
+  font-family: "Poppins",sans-serif;
+  }
+  
+  :root{
+    --bg-color: rgba(0, 0, 0, 0.958);
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#00ffee;
+  }
+  html{
+    font-size:65%;
+    max-width:300px;
+  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
