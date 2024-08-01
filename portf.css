@@ -29,6 +29,10 @@ html{
   z-index:-10;
   position: absolute;
 }
+#myvideo2{
+  z-index:-10;
+  position: absolute;
+}
 .video{
   z-index: -10;
 }
@@ -699,33 +703,7 @@ grid-template-columns: repeat(1,1fr);
 }
 }
 @media (max-width:410px) {
-  *{
-    /*Somethings in the way*/
-     /*Somethings in the way*/
-      /*Somethings in the way*/
-       /*Somethings in the way*/
-        /*Somethings in the way*/
-         /*Somethings in the way*/
-    margin:0;
-  padding:0;
-  text-decoration: none;
-  box-sizing: border-box;
-  border:none;
-  outline:none;
-  scroll-behavior: smooth;
-  font-family: "Poppins",sans-serif;
-  }
   
-  :root{
-    --bg-color: rgba(0, 0, 0, 0.958);
-    --second-bg-color:#131313;
-    --text-color:white;
-    --main-color:#00ffee;
-  }
-  html{
-    font-size:65%;
-    max-width:300px;
-  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
@@ -805,6 +783,70 @@ grid-template-columns: repeat(1,1fr);
 justify-content:center;
 margin:0 auto;
 }
+.service-box{
+  padding:6rem;
+  margin-top:2rem;
+}
+.service-box.p{
+  font-size: 17rem;
+}
+.service-info > p{
+  font-size:2rem;
+}
+.services2{
+  background:none;
+  margin:0 auto;
+}
+.heading2{
+  color:white;
+  background-color: #000000c1;
+  font-size: 4rem;
+  font-weight:900;
+}
+.services-container2{
+  margin: 0 auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  background-color: none;
+}
+#myvideo2{
+  z-index:-10;
+  position: absolute;
+  height:350rem;
+}
+.education > h4{
+  font-size: 4rem;
+  font-weight: 900;
+}
+.education h4{
+  margin: 0 auto;
+  justify-content: center;
+}
+.carousel{
+  margin: 0 auto;
+  width:46rem;
+  left:-1rem;
+  font-size:2.2rem;
+}
+.carousel-content{
+  padding:8rem 1rem;
+  width:35rem;
+  margin:0 auto;
+  justify-content: center;
+  overflow-x: visible;
+}
+.carousel-content >img{
+  width:31rem;
+  height: 26rem;
+  margin:0 auto;
+}
+.prev{
+  left:-1rem;
+}
+.next{
+  left:90%;
+}
 .btn-group{
   justify-content: center;
   margin:0 auto;
@@ -816,17 +858,20 @@ margin:0 auto;
 max-width:3rem;
 display: inline;
 }
-
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  gap: 2.5rem;
-  padding: 0.1rem;
+.services{
+  width:40rem;
+  margin:0 auto;
+  justify-content: center;
+  border-color: var(--main-color);
 }
-.services-container,.service-info {
+.services-container{
   display: inline;
   grid-template-columns: repeat(1, 1fr); 
-  padding: 2rem;
+  padding: 25rem;
+}
+.logo3{
+  width:24rem;
+  min-height:18rem;
 }
 h4{
   font-size:2rem;
