@@ -717,6 +717,9 @@ grid-template-columns: repeat(1,1fr);
   }
 }
 @media (max-width:690px) {
+  .header{
+    max-width:410px;
+  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
@@ -724,6 +727,7 @@ grid-template-columns: repeat(1,1fr);
   }
 .navbar{
   display: none;
+  max-width:0.01rem;
 }
 
 #menu-icon{
@@ -932,37 +936,5 @@ header nav a {
 .project-card img {
   width: 100%;
   border-radius: 10px;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-  }
-
-  header h1 {
-      font-size: 20px;
-  }
-
-  header nav {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  header nav a {
-      margin: 10px 0;
-  }
-
-  .projects {
-      padding: 10px;
-  }
-
-  .project-card {
-      width: 90%;
-  }
-
-  .project-card img {
-      width: 100%;
-  }
 }
 }
