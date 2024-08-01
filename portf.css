@@ -719,11 +719,15 @@ grid-template-columns: repeat(1,1fr);
 @media (max-width:690px) {
   .header{
     max-width:410px;
+    background-color:red;
   }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
     position:fixed;
+  }
+  ::-webkit-scrollbar{
+    max-width:0.1rem;
   }
 .navbar{
   display: none;
