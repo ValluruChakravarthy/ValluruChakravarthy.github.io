@@ -813,9 +813,8 @@ margin:0 auto;
   grid-template-columns: repeat(1, 1fr); 
   background-color: none;
 }
-#myvideo2{
-  object-fit: fill;
-  min-height: 350vh;
+#myvideo{
+  display: none;
 }
 .education > h4{
   font-size: 4rem;
