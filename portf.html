@@ -1,307 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <video  autoplay muted loop id="myvideo">
-        <source src="stars.mp4" type="video/mp4">
-    </video>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="1.jpg">
-    <link href="test.css" rel="stylesheet">
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="portf.css" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
-   <header class="header"> 
-    <a href="#home" class="logo animate">Valluru Chakravarthy </a>
+    <main>
+        <header>
+            <nav id="navbar">
+                <project-tile id="top-id">PORTOFINO</project-tile>
+                <ul id="toplist">
+                    <li class="nav-list"><a href="#welcome-section">About</a></li>
+                    <li class="nav-list"><a href="#Work">Work</a></li>
+                    <li class="nav-list"><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
-    <nav class="navbar animate2">
-        <a href ="#home" class="active">Home</a>
-        <a href ="#education">Education</a>
-        <a href ="#services">Work Experience</a>
-        <a href="#certifications">Works</a>
-        <a href="#form.html">Contact</a>
-    </nav>
-    
-   </header>
-   <nav class="dropdown animate2" id="drop">
-    <a href ="#home" class="active">Home</a>
-    <a href ="#education">Education</a>
-    <a href ="#services">Work Experience</a>
-    <a href="#certifications">Works</a>
-    <a href="#form.html">Contact</a>
-</nav>
+        <section id="welcome-section">
+            <div id="welcome">
+                <h1>Hello I'm Chakri!!!</h1>
+                <div id="cloud-button-container">
+                    <button id="cloud-button"><a href="aboutme.html" target="_blank">About me</a></button>
+                </div>  
+            </div>
+        </section>
 
-<section class="home" id="home">
-    <div class="home-content">
-        <h1 class="animate">Hi! I'm <span>Chakri</span></h1>
-        <h3 class="text-animation animate">I'm a <span></span></h3>
-        <p class="animate">Cloud developer,architect,teaching assistant,entreprenuer,piano-player</p>
-
-        <div class="social-icons animate2">
-            <a href="https://linkedin.com/in/valluru-chakravarthy" target="_blank"><box-icon name='linkedin-square' type='logo' animation='flashing' ></box-icon></a>
-            <a href="https://github.com/ValluruChakravarthy" target="_blank"><box-icon type='logo' name='github'  animation='flashing'></box-icon></a>
-            <a href="https://www.instagram.com" target="_blank"><box-icon type='logo' name='instagram-alt' animation='flashing'></box-icon></a>
-            <a href="https://www.gmail.com" target="_blank"><box-icon name='gmail' type='logo' animation='flashing' ></box-icon></a>
-        </div>
-
-        <div class="btn-group animate2">
-            <a href="#" class="btn">Hire</a>
-            <a href="#contact" class="btn">About</a>
-        </div>
-    </div>
-    <div class="home-img animate">
-        <img src="first_me.png" alt="">
-    </div>
+        <section id="Worked">
+            <section id="Work">
+                <h2 class="project-title animate">These are some of my Projects</h2>
+                <section id="projects">
+                    <div id="card" class="animate">
+                        <a href="https://github.com/ValluruChakravarthy/Node-Webapp-Project" target="_blank">
+                            <label>Node Quiz App</label>
+                            <img src="chakri_quiz.png" usemap="ferris">
+                        </a>
+                        <a href="https://explorer.apothem.network/nft/xdc47d2ee24b75ede6b63a04aa27fe7e2111ea705da/0" target="_blank">
+                            <label>My NFT & XDC Block</label>
+                            <img src="NFT.png">
+                        </a>
+                        <a href="form.html" target="_blank">
+                            <label>Form Me</label>
+                            <img src="doggieform.png">
+                        </a>
+                        <a>
+                            <label>Tribute Page</label>
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+                        </a>
+                    </div>
+                </section>
+                <div id="button">
+                    <button id="batton"><a href="https://github.com/ValluruChakravarthy">Show All ></a></button>
+                </div>
+            </section>
+        </section>
 
        
-</section>
-
-    <hr>
-<section class="education animate" id="education">
-    <h2 class="heading">Education</h2>
-
-        <div class="timeline-items animate2">
-            <div class="timeline-item animate2">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date"><b>2024</b></div>
-                    <div class="timeline-content">
-                        <h3>Master's in Inoformation Science/Studies</h3>
-                        <p>Currently Pursuing Masters in Information science
-                            and Technology with Specialization in 
-                            Enterprise Resource and Planning,most of the
-                            coursework is based on SAP
-                        </p>
-                        <p>Key Skills - <span>SAP ,S4/HANA
-                            SAP Analytics Cloud,SAP BI,SAP BW7.5
-                        </span></p>
-                    </div>
+        <section id="work-experience">
+            <h2>💼💼 WORK EXPERIENCE💼💼</h2>
+                
+            <div class="job">
+                <div class="job-details">
+                    <h3 class="animate">Graduate Teaching Assistant</h3>
+                    <p class="animate">
+                        <strong>Organization:</strong> Missouri University of Science and Technology<br>
+                        <strong>Jan 2024 – present</strong>
+                    </p>
+                    <ul class="animate">
+                        <li>Monitored and tracked academic progress of 50+ students, </li>
+                        <li>Proficient in DSP, Microcontrollers, MATLAB, Calculus, and Algebra.</li>
+                    </ul>
                 </div>
-            </div>
-
-            <div class="timeline-item animate2">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date"><b>2021</b></div>
-                    <div class="timeline-content">
-                        <h3>Bacheors in Electrical Engineering</h3>
-                        <p>Pursued bachelors in Electrical and Electronics Engineering, with 
-                            over 1 year 
-                            of total Intern experience specialized in
-                            heavy machines, synchrnous motors,
-                            Power plants and Microcontrollers.
-                        </p>
-                    </div>
+                <div class="job-images">
+                    <img src="s&tlogo.png" class="animated-img" alt="Missouri S&T logo">
+                    <img src="stlogo2.png" class="animated-img" alt="Image 2">
                 </div>
-
-            </div>
-        </div>
-</section>
-
-<section class="services" id="services">
-    <h2 class="heading animate">PROJECTS</h2>
-    <div class="services-container container3">
-        <div class="service-box project3">
-            <div class="service-info project3">
-                <h4>Node Quiz App</h4>
-                <img class="logo3"src="node.png">
-                <p>A full-stack project based on Node and Mysql ,with usage of API,
-                    real-time monitoring system.
-                </p>
-            </div>
-        </div>
-        <div class="service-box project3">
-        <div class="service-info project3">
-            <h4>NFT & XDC Pay App</h4>
-            <img class="logo3"src="nft.png">
-            <p>A blockchain implementation which uses NFT token and
-                XDC Pay app to mint a token under XRC721 standard.
-            </p>
             </div>
             
-        </div>
-        <div class="service-box project3">
-            <div class="service-info project3">
-               <h4>Tic Tac Toe</h4>
-                <img class="logo3" src="tico.jpg">
-                <p>A tic tac toe game created by me using Javascript,Html,Css</p>
-                 </div>
-            </div>
-            <div class="service-box project3">
-                <div class="service-info project3">
-                   <h4>Snake Game</h4>
-                    <img class="logo3" src="snake.png">
-                    <p>A Snake game created by me using Js,Html and Css</p>
-                     </div>
+            <div class="job">
+                <div class="job-details">
+                    <h3 class="animate">Cognizant Technology Solutions</h3>
+                    <p class="animate">
+                        <strong>Client:</strong> First Abu Dhabi Bank(UAE)<br>
+                        <strong>Sep 2021 – Jul 2023</strong>
+                    </p>
+                    <ul class="animate">
+                        <li>Managed a process re-engineering project...</li>
+                        <li>Spearheaded the successful integration project...</li>
+                        <li>Engineered database optimization strategies...</li>
+                        <li>Led the development and deployment of 4 crucial APIs...</li>
+                        <li>Conversion of 6 data-based imports...</li>
+                    </ul>
                 </div>
-
-        </div>
-</section>
-<video  autoplay muted loop id="myvideo">
-    <source src="office.mp4" type="video/mp4">
-</video>
-
-<section class="services2" id="services">
-    <h2 class="heading2 animate">Work Experience</h2>
-    <div class="services-container2 animate3">
-        <div class="service-box">
-            <img class="logo2"src="s&tlogo.png">
-            <div class="service-info">
-                <h4>Teaching Assistant</h4>
-                <p>Currently Teaching Assistant at Missouri S&T,for Cpe3301-Digital Signal Processing.Monitored and prepared , corrected assignments for Undergrads
-                        in <b>MATLAB,LTSpice</b>.Summer tutor as Electrical teaching assistant for Line-Follower robot
-                        with programming done in <b>Arduino,RaspBerry Pi</b>
-                    </p><p class="period">Period : 2023-Present</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <img class="logo2 cts"src="cognizant.png">
-        <div class="service-info">
-            <h4>Programmer Analyst</h4>
-            <p><b>2 Years</b> of expertise in Cloud ops,Application.Developed 
-            Bank Application which involves several functionalities like Onboarding, Offoarding
-        ,SOW Signoff,Procurement,Fast Pay,Payrol,Accounts Receivables and Payables
-                Implemented several components to integrate in <b>SAAS and PAAS</b>
-                Development done in Oracle<b>VBCS,PCS,OIC,APEX,SOA suite 5.0</b>
-                Database Administrationa and Management in <b>SQL developer,using PL/SQL and SQL</b></p>
-                <p class="period">Period : 2021-2023</p>
+                <div class="job-images2">
+                    <img src="apex.png" class="animated-img" alt="Image 3">
+                    <img src="jshtmlcs.png" class="animated-img" alt="Image 4">
+                    <img src="pcs.png" class="animated-img" alt="Image 5">
+                    <img src="oic.png" class="animated-img" alt="Image 6">
+                    <img src="soap.png" class="animated-img" alt="Image 8">
+                    <img src="rest.png" class="animated-img" alt="Image 7">
+                </div>
             </div>
             
-        </div>
-        <div class="service-box">
-            <img class="logo2 cts"src="cognizant.png">
-            <div class="service-info">
-                <h4>Programmer Trainee</h4>
-                <p>Intensive corporate training in <b>Html,CSS,Javascript,Core Java Oracle technologies</b>.Obtanied various corporate standards certfications 
-                    in Oracle tenchologies,Hackerrank.</p>
-                <p class="period">Period : 2020-21</p>
-                 </div>
-            </div>
-
-        </div>
-</section>
-
-<section class="education animate" id="certifications">
-<h4 class="heading">CERTIFICATIONS</h4>
-<section class="projects" id="projects">
-    <div class="carousel animate3">
-        <a class="carousel-control prev" onclick="plusSlides(-1)">&#10094;</a>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-content">
-                    <img src="coursera2.png" alt="Cert 1">
-                    <h3>IBM Data Analyst Professional Certificate</h3>
-                    <p>Issuing Organization : IBM & Coursera</p>
+        </section>
+        <section id="Worked">
+            <section id="Work2">
+                <h2 class="project-title animate">Check out my fun projects</h2>
+                <section id="projects">
+                    <div id="card" class="animate">
+                        <a href="poortf2ref.html" target="_blank">
+                            <label>MyPenguin</label>
+                            <img src="pingu.PNG" usemap="ferris">
+                        </a>
+                        <a href="TicTacToe.html" target="_blank">
+                            <label>Tic Tac Toe</label>
+                            <img src="tico.jpg">
+                        </a>
+                        <a href="snake.html" target="_blank">
+                            <label>Snake Game</label>
+                            <img src="snake.png">
+                        </a>
+                        <a>
+                            <label>Tribute Page</label>
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+                        </a>
+                    </div>
+                </section>
+                <div id="button">
+                    <button id="batton"><a href="https://github.com/ValluruChakravarthy">Show All ></a></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-content">
-                    <img src="coursera1.png" alt="Cert 2">
-                    <h3>Google Data Analytics Certification</h3>
-                    <p>Issuing Organization : Google & Coursera</p>
+            </section>
+        </section>
+        <footer id="Contact">
+            <section id="About">
+                <h4>&#128516;What's your hobbies?&#128512;</h4>
+                <p id="About"><i>Let's Meet Up...</i></p>
+                <div id="social" class="animate2">
+                    <a href="https://github.com/ValluruChakravarthy" target="_blank" id="profile-link">Github</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://linkedin.com/in/valluru-chakravarthy" target="_blank">Linkedin</a>
+                    <a href="https://www.gmail.com" target="_blank">Send-a-mail</a>
+                    <a href="https://www.google.com" target="_blank">Call me</a>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-content">
-                    <img src="certificate2.png" alt="Cert 3">
-                    <h3>Java Basic Certificate</h3>
-                    <p>Issuing Organization : Hackerrank</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-content">
-                    <img src="certificate3.png" alt="Cert 4">
-                    <h3>Javascript Basic Certificate</h3>
-                    <p>Issuing Organization : Hackerrank</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-content">
-                    <img src="certificate5.png" alt="Cert 5">
-                    <h3>SQL Intermediate Certificate</h3>
-                    <p>Issuing Organization : Hackerrank</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-</section>
+                <div id="bra"></div>
+                <h6>© Created for Sole-purpose and for other purpose too :)</h6>
+            </section>
+        </footer>
+    </main>
 
-</section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elementsToAnimate = document.querySelectorAll('.animate, .animated-img');
 
+            const observerOptions = {
+                threshold: 0.1
+            };
 
-<footer class="footer">
-    <div class="social">
-        <a href="https://linkedin.com/in/valluru-chakravarthy" target="_blank"><box-icon name='linkedin-square' type='logo' animation='flashing' ></box-icon></a>
-        <a href="https://github.com/ValluruChakravarthy" target="_blank"><box-icon type='logo' name='github'  animation='flashing'></box-icon></a>
-        <a href="https://www.instagram.com" target="_blank"><box-icon type='logo' name='instagram-alt' animation='flashing'></box-icon></a>
-        <a href="https://www.gmail.com" target="_blank"><box-icon name='gmail' type='logo' animation='flashing' ></box-icon></a>
-    </div>
-    <ul class="list">
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Work experience</a></li>
-        <li><a href="">About me</a></li>
-        <li><a href="form.html">Contact me</a></li>
-    </ul>
-    <p class="copy">Created for sole purpose,not to copy<box-icon name='wink-smile' type='solid' animation='flashing' ></box-icon></p>
-</footer>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const elementsToAnimate = document.querySelectorAll('.animate3,.animate2,.animate, .animated-img');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
 
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        elementsToAnimate.forEach(element => observer.observe(element));
-    });
-    let slideIndex = 0;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    const slides = document.getElementsByClassName("carousel-item");
-    if (n >= slides.length) {
-        slideIndex = 0;
-    } 
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex].style.display = "block";
-}
-var k=0;
-
-document.getElementById("menu-icon").onclick = function() {
-    var x=document.getElementById("menu-icon");
-    if (x.className === "bx bx-menu") {   
-        document.getElementById("drop").style.display="inline";
-        x.className = "bx bx-x";
-  } else {
-    console.log(x);
-    document.getElementById("drop").style.display="none";
-    x.className="bx bx-menu";
-  }
-};
-
-</script>
-
+            elementsToAnimate.forEach(element => observer.observe(element));
+        });
+    </script>
 </body>
-
 </html>
