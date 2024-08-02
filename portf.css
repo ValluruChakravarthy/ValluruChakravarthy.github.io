@@ -927,6 +927,7 @@ header nav a {
   border-radius: 10px;
 }
 #myvideo{
+  z-index:-11;
   display:inline;
   position: absolute;
   object-fit: fill;
