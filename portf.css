@@ -658,7 +658,9 @@ overflow: visible;
   color:#00ffee;
   font-family: "Poppins",sans-serif;
 }
-
+#myvideo3{
+  display: none;
+}
 /*Media queries*/
 
 @media(max-width:1285px){
@@ -937,5 +939,14 @@ header nav a {
 .project-card img {
   width: 100%;
   border-radius: 10px;
+}
+#myvideo{
+  display: none;
+}
+#myvideo3{
+  z-index:-10;
+  position: absolute;
+  display: inline;
+object-fit: scale-down;
 }
 }
