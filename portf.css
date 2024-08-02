@@ -28,10 +28,12 @@ html{
 #myvideo{
   z-index:-10;
   position: absolute;
+  object-fit: fill;
 }
 #myvideo2{
   z-index:-10;
   position: absolute;
+  object-fit: fill;
 }
 .video{
   z-index: -10;
@@ -717,9 +719,6 @@ grid-template-columns: repeat(1,1fr);
   }
 }
 @media (max-width:690px) {
-  *{
-    max-width: 100%;
-  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
@@ -737,10 +736,9 @@ grid-template-columns: repeat(1,1fr);
   top:4rem;
 }
 .dropdown{
-  left:0;
+  left:60%;
   top:7rem;
-display: flex;
-flex-direction: column;
+  display: inline-block;
   text-decoration: none;
   color:var(--main-color);
 }
@@ -816,10 +814,8 @@ margin:0 auto;
   background-color: none;
 }
 #myvideo2{
-  z-index:-10;
-  position: absolute;
-  height:350rem;
-  max-width:7rem;
+  object-fit: fill;
+  min-height: 350vh;
 }
 .education > h4{
   font-size: 4rem;
