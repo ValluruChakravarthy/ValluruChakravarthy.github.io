@@ -927,12 +927,11 @@ header nav a {
   border-radius: 10px;
 }
 #myvideo{
-  display: none;
+  display:inline;
+  position: absolute;
+  object-fit: fill;
 }
 #myvideo3{
-  z-index:-10;
-  position: absolute;
-  display: inline;
-object-fit: scale-down;
+ display: none;
 }
 }
