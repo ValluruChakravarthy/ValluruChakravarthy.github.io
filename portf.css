@@ -658,9 +658,7 @@ overflow: visible;
   color:#00ffee;
   font-family: "Poppins",sans-serif;
 }
-#myvideo3{
-  display: none;
-}
+
 /*Media queries*/
 
 @media(max-width:1285px){
@@ -706,14 +704,25 @@ grid-template-columns: repeat(1,1fr);
   padding:2rem 3%;
 }
 }
+@media (max-width:410px) {
+  
+  #menu-icon{
+    font-size: 13.6rem;
+    color:var(--main-color);
+    position:fixed;
+    cursor: pointer;
+    z-index: 55;
+    overflow: visible;
+  }
+  .navbar{
+    display: hidden;
+  }
+}
 @media (max-width:690px) {
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
     position:fixed;
-  }
-  .header{
-    max-width: 100%;
   }
 .navbar{
   display: none;
@@ -925,11 +934,5 @@ header nav a {
 .project-card img {
   width: 100%;
   border-radius: 10px;
-}
-#myvideo{
-  display: none;
-}
-#myvideo3{
- display: none;
 }
 }
