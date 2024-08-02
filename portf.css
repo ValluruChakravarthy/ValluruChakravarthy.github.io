@@ -724,6 +724,9 @@ grid-template-columns: repeat(1,1fr);
     color:var(--main-color);
     position:fixed;
   }
+  .header{
+    max-width: 80%;
+  }
 .navbar{
   display: none;
   max-width:0.01rem;
