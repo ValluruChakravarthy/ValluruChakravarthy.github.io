@@ -1,323 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+    <video  autoplay muted loop id="myvideo">
+        <source src="stars.mp4" type="video/mp4">
+    </video>
+    <video  autoplay muted loop id="myvideo3">
+        <source src="stars_mobile.mp4" type="video/mp4">
+    </video>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: scroll; 
-        }
-        .container {
-            width: 100%;
-            padding: 0;
-        }
-        .content {
-            width: 55%;
-            margin: 0.3vw;
-            font-size: 2.2vw;
-            padding: 1.4vw;
-            text-align: left;
-        }
-        .section {
-            padding: 50px 0;
-            margin: 20px 0;
-            width: 100%;
-        }
-        .floating-cloud {
-            position: fixed;
-            right: 5%;
-            top: 25%;
-            transform: translateY(-5%);
-            width: 28vw;
-            height: auto;
-            z-index: 2;
-            animation: float 10s ease-in-out infinite;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .floating-cloud img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 25%;
-            border-width: 20%;
-            border-style: 5vw groove;
-            box-shadow: inset;
-        }
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        .section:nth-child(even) {
-            background-color: #000000;
-            color: white;
-        }
+    <link rel="icon" href="1.jpg">
+    <link href="aboutme.css" rel="stylesheet">
 
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: #bfbfbf;
-            display: flex;
-            flex-direction: row;
-            padding: 0.6vw;
-            z-index: 3;
-        }
-        .profile-name {
-            font-size: 1.5em;
-            font-weight: bold;
-            font-size: 1.7vw;
-        }
-        .nav-list{
-            display: flex;
-            flex-direction: row;
-            margin-left:1.2vw;
-        }
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #bfbfbf;
-    box-shadow: 0 4px 2px -2px gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 10;
-    
-}
-.profile-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-size: 1.7vw;
-}
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    font-size: 1.4vw;
-}
-.nav-list li {
-    margin:0 1vw;
-    font-size: 1.4vw;
-}
-.nav-list a {
-    text-decoration: none;
-    color: #000;
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin:0 auto;
-    overflow: hidden;
-}
-.slider-content {
-    display: flex;
-    margin: 0;
-    transition: transform 0.5s ease-in-out;
-}
-.slider-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-}
-.slider img {
-    width: 100%;
-    border-radius: 10px;
-}
-.slider-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-.slider-nav button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-        #social{
-            display:flex;
-            margin:1vw 0;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="profile-name">My Profile</div>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="form.html">Contact</a></li>
-                <li><a href="portf.html">Home</a></li>
-                <li><a href="#home">  </a></li>
-            </ul>
-        </nav>
-    </header>
+   <header class="header"> 
+    <a href="#home" class="logo animate">Valluru Chakravarthy </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar animate2">
+        <a href ="#home" class="active">Home</a>
+        <a href ="#education">Education</a>
+        <a href ="#services">Work Experience</a>
+        <a href="#certifications">Works</a>
+        <a href="#form.html">Contact</a>
+    </nav>
     
-    <section>
-        <div class="container">
-            <section class="section" data-aos="fade-up">
-                <div class="content">
-                    <h1>About Me</h1>
-                    <p>I'm Chakravarthy</p>
-                    <p>I'm a Software developer, worked on Oracle cloud for 2 years</p>
-                    <p>I'm currently a Masters student at Missouri S&T</p>
-                </div>
-            </section>
+   </header>
+   <nav class="dropdown animate2" id="drop">
+    <a href ="#home" class="active">Home</a>
+    <a href ="#education">Education</a>
+    <a href ="#services">Work Experience</a>
+    <a href="#certifications">Works</a>
+    <a href="#form.html">Contact</a>
+</nav>
 
-            <section class="section" data-aos="fade-up">
-                <div class="content">
-                    <h2>My Skills</h2>
-                    <p>Oracle ERP : Oracle PCS, OIC, Oracle VBCS , Oracle APEX, Oracle - OIC, Oracle Managed File Transfer(FTP,SFTP),Oracle FBDI</p>
-                    <p>Web : Html, Css, Javascript, Node, React.js, Python , flask(python) , Express.js</p>
-                    <p>Database : MYSQL, Oracle SQL,PL/SQL</p>
-                    <p>ERP : SAP Fiori/ UI5, HANA database, BTP, SAC, ETL, SAS Viya</p>
-                    <p>Other : VScode, IntelliJ, Jupyter notebook, R studio, Github, Proteus, Power BI.</p>
-                </div>
-            </section>
+<section class="home" id="home">
+    <div class="home-content">
+        
+        <a href="https://valluruchakravarthy.github.io//portf.html" class="btn">Home</a>
 
-            <section class="section" data-aos="fade-up" id="certifications">
-                <div class="content">
-                    <h2>My Certifications</h2>
-                    <div class="slider" id="certificationsSlider">
-                        <div class="slider-content">
-                            <div class="slider-item">
-                                <img src="certificate5.png" alt="Certificate 5">
-                            </div>
-                            <div class="slider-item">
-                                <img src="certificate4.png" alt="Certificate 4">
-                            </div>
-                            <div class="slider-item">
-                                <img src="certificate3.png" alt="Certificate 3">
-                            </div>
-                             <div class="slider-item">
-                                <img src="certificate2.png" alt="Certificate 2">
-                            </div>
-                        </div>
-                        <div class="slider-nav">
-                            <button class="prev">Prev</button>
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="yu animate2">
+        <iframe width="420" height="315"  src="https://www.youtube.com/embed/jMBEgOluR18?si=mMnepieCMXZsw9p7" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <section class="section" data-aos="fade-up" id="ending">
-                <div class="content">
-                    <footer id="Contact">
-            <section id="About">
-                <div id="social" class="animate2">
-                    <a href="https://github.com/ValluruChakravarthy" target="_blank" id="profile-link">Github</a>
-                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                    <a href="https://linkedin.com/in/valluru-chakravarthy" target="_blank">Linkedin</a>
-                    <a href="https://www.gmail.com" target="_blank">Send-a-mail</a>
-                    <a href="https://www.google.com" target="_blank">Call me</a>
-                </div>
-                <div id="bra"></div>
-            </section>
-        </footer>
-                </div>
-            </section>
-        </div>
-    </section>
-    <section>
-        <div class="floating-cloud" id="floatingCloudContainer">
-            <img src="/mnt/data/image.png" alt="Floating Cloud" id="floatingCloud">
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            const floatingCloudContainer = document.getElementById('floatingCloudContainer');
-            const floatingCloud = document.getElementById('floatingCloud');
-            const cloudImages = [
-                'first_me.png',  
-                'skills.png',
-            ];
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/Q2v5pwmR7ao?si=MsQswEMwYLm9iPiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <p class="animate">I like to program <span>games</span>, using Java,C++ and Blueprints
+            , I have used recent engines like Unity, Unreal engine
+              , I have made a tutorial here as well,You can checkout from my Youtube links here..
+        </p>
+        <p class="animate">I like to Play games, I like to dance , my favourite dancer is Prabhudev.Beethoven 
+            is my inspiration for my Piano playing skills, I can recognize the song 
+            pitches and meds and can make a score for it.My next hoy is to score and mix-up songs.
+            I thank <span>YOU </span>very much for browsing my content.
+        </p>
+        <p class="animate">I have developed the ongoing Bank application project
+            which deals with <bold>Financials,HR,Integration,Migrations</bold> and
+            other aspects in a financial application,I have used several cloud technologies 
+            like <bold>Oracle Apex, VBCS,Oracle Integration Cloud,Process Cloud</bold> and so on.
+         </p>
+            <h3 class="text-animation animate">Over my span of 2 years, My expertise lies in Information Technology fields like  <span></span></h3>
+         <p class="animate">I'm Chakri, I'm currently a Master's student at Missouri S&T,
+            With Specialization in Enterprise Resource Planning and Supply Chain 
+            Management.
+         </p>
+        <h1 class="animate">Nice to meet you!</h1>
+    </div>
+    
+       
+</section>
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const index = Array.from(sections).indexOf(entry.target);
-                        floatingCloudContainer.style.opacity = 0; 
-                        setTimeout(() => {
-                            floatingCloud.src = cloudImages[index];
-                            floatingCloudContainer.style.opacity = 1; 
-                        }, 1000); 
-                    }
 
-                   //hide this yo
-                    if (entry.target.id === 'certifications' && entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'none';
-                    } else if (entry.target.id === 'certifications' && !entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'block';
-                    }
-                    else if (entry.target.id === 'ending'&& entry.isIntersecting) {
-                        floatingCloudContainer.style.display = 'none';
+<footer class="footer">
+    <div class="social">
+        <a href="https://linkedin.com/in/valluru-chakravarthy" target="_blank"><box-icon name='linkedin-square' type='logo' animation='flashing' ></box-icon></a>
+        <a href="https://github.com/ValluruChakravarthy" target="_blank"><box-icon type='logo' name='github'  animation='flashing'></box-icon></a>
+        <a href="https://www.instagram.com" target="_blank"><box-icon type='logo' name='instagram-alt' animation='flashing'></box-icon></a>
+        <a href="https://www.gmail.com" target="_blank"><box-icon name='gmail' type='logo' animation='flashing' ></box-icon></a>
+    </div>
+    <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Work experience</a></li>
+        <li><a href="">About me</a></li>
+        <li><a href="form.html">Contact me</a></li>
+    </ul>
+    <p class="copy">Created for sole purpose,not to copy<box-icon name='wink-smile' type='solid' animation='flashing' ></box-icon></p>
+</footer>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elementsToAnimate = document.querySelectorAll('.animate3,.animate2,.animate, .animated-img');
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
-                });
-            }, {
-                threshold: 0.5
             });
+        }, observerOptions);
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+        elementsToAnimate.forEach(element => observer.observe(element));
+    });
+    let slideIndex = 0;
+showSlides(slideIndex);
 
-       //slide this yo
-            const slider = document.getElementById('certificationsSlider');
-            const sliderContent = slider.querySelector('.slider-content');
-            const sliderItems = slider.querySelectorAll('.slider-item');
-            const prevButton = slider.querySelector('.prev');
-            const nextButton = slider.querySelector('.next');
-            let currentIndex = 0;
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-            function showSlide(index) {
-                const totalSlides = sliderItems.length;
-                if (index >= totalSlides) {
-                    currentIndex = 0;
-                } else if (index < 0) {
-                    currentIndex = totalSlides - 1;
-                } else {
-                    currentIndex = index;
-                }
-                sliderContent.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
+function showSlides(n) {
+    const slides = document.getElementsByClassName("carousel-item");
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } 
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+var k=0;
 
-            prevButton.addEventListener('click', () => {
-                showSlide(currentIndex - 1);
-            });
+document.getElementById("menu-icon").onclick = function() {
+    var x=document.getElementById("menu-icon");
+    if (x.className === "bx bx-menu") {   
+        document.getElementById("drop").style.display="inline";
+        x.className = "bx bx-x";
+  } else {
+    console.log(x);
+    document.getElementById("drop").style.display="none";
+    x.className="bx bx-menu";
+  }
+};
 
-            nextButton.addEventListener('click', () => {
-                showSlide(currentIndex + 1);
-            });
+</script>
 
-            showSlide(currentIndex);
-        });
-    </script>
 </body>
+
 </html>
