@@ -706,20 +706,6 @@ grid-template-columns: repeat(1,1fr);
   padding:2rem 3%;
 }
 }
-@media (max-width:410px) {
-  
-  #menu-icon{
-    font-size: 13.6rem;
-    color:var(--main-color);
-    position:fixed;
-    cursor: pointer;
-    z-index: 55;
-    overflow: visible;
-  }
-  .navbar{
-    display: hidden;
-  }
-}
 @media (max-width:690px) {
   #menu-icon{
     font-size: 13.6rem;
@@ -727,7 +713,7 @@ grid-template-columns: repeat(1,1fr);
     position:fixed;
   }
   .header{
-    max-width: 80%;
+    max-width: 100%;
   }
 .navbar{
   display: none;
