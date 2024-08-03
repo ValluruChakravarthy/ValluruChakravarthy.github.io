@@ -25,6 +25,9 @@ html{
   font-size:65%;
   overflow-x: hidden;
 }
+a[id="footer"]:hover{
+  color:black;
+}
 #myvideo{
   z-index:-10;
   position: absolute;
