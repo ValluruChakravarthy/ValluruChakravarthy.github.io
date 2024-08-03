@@ -4,9 +4,15 @@
     padding: 0;
 }
 
+:root{
+    --bg-color: rgba(0, 0, 0, 0.958);
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#00ffee;
+  }
 body {
-    font-family: Tahoma, sans-serif;
-    background: linear-gradient(270deg, rgb(109, 160, 255), rgb(136, 118, 255), rgb(118, 255, 155));
+    font-family:"Poppins",sans-serif;
+    background: var(--bg-color);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     display: flex;
@@ -31,51 +37,46 @@ body {
 
 .container {
     display: flex;
-    background: white;
+    background: var(--second-bg-color);
     border-radius: 2%;
     overflow: hidden;
-    max-width: 60vw;
+    max-width:90vw;
     width: 47vw;
     margin-top: 6%;
     margin-bottom: 6%;
+    color:transparent;
+    gap:21vw;
+    line-height: 1.6;
 }
-
-.left-panel {
-    background: linear-gradient(270deg,#72ff4b,#c1ffbb);
-    color: rgb(26, 24, 24);
-    padding: 2em;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.left-panel h2 {
-    font-size: 2vw;
-}
-
 .right-panel {
     padding: 3vw;
     width: 100%;
     border-style: ridge;
-    border-color: #202020;
+    border-color: var(--main-color);
     border-width: 1.2vw;
 }
-
+span{
+    color:var(--main-color);
+  }
 h1 {
-    color: #333;
+    color: white;
     text-align: center;
     margin-bottom: 20px;
     font-style: sans-serif;
+    font-weight: 800;
+    font-size:2.1rem;
 }
 
 p {
-    color: #333;
+    color: #e9e9e9;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
-
+input,#location,textarea{
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
 form {
     display: flex;
     flex-direction: column;
@@ -88,15 +89,15 @@ fieldset {
 }
 
 label {
-    margin-top: 10px;
-    color: #333;
+    margin-top:0 auto;
+    color: #ededed;
 }
 
 input, select, textarea, button {
     margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--main-color);
     width: 100%;
 }
 
@@ -120,12 +121,12 @@ input[type="file"] {
 }
 
 button {
-    background: #0db9f0;
+    background: var(--main-color);
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 20px;
-    transition: background 0.3s ease;
+    transition:0.3s ease;
 }
 
 button:hover {
