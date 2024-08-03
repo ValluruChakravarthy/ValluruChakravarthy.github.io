@@ -713,15 +713,17 @@ grid-template-columns: repeat(1,1fr);
     color:var(--main-color);
     position:fixed;
   }
-  header{
-    justify-content: left;
-    max-width: 6rem;
-  }
 .navbar{
   display: none;
   max-width:0.01rem;
 }
-
+.home-content,h1,h3{
+  text-align: center;
+  margin:0 auto;
+}
+.dropdown{
+  left:50%;
+}
 #menu-icon{
   display: inline;
   left:80%;
@@ -729,7 +731,6 @@ grid-template-columns: repeat(1,1fr);
   top:4rem;
 }
 .dropdown{
-  left:60%;
   top:7rem;
   display: inline-block;
   text-decoration: none;
