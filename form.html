@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medical Appointment</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="form.css">
 </head>
 <body>
-   <div class="left-panel">
-      <h2>Let me check you ASAP!!! 😄😄😄</h2>
-    </div>
   <div class="container">
     <div class="right-panel">
-      <h1 id="title">Need an appointment??</h1>
-      <p id="description">Please fill out the form and let me check it ASAP!!</p>
+      <h1 id="title">Contact <span>Me</span><i class='bx bxs-wink-smile bx-burst' ></i></h1>
+      <p id="description">Thanks for contacting me!!</p>
     
       <form id="survey-form" action="https://formspree.io/f/xeqydkjy" method="POST">
         <fieldset>
@@ -25,21 +23,6 @@
 
           <label for="number">Age: </label>
           <input type="number" id="number" name="age" required>
-
-          <div id="bra"></div>
-
-          <label for="type">Choose your Consultation:</label><br>
-          <input type="radio" id="ent" class="optionz" name="consultation" value="Cooking">
-          <label for="ent">Cooking</label><br>
-          <input type="radio" id="cardio" class="optionz" name="consultation" value="Workouts">
-          <label for="cardio">Workouts</label><br>
-          <input type="radio" id="gastro" class="optionz" name="consultation" value="My experiences">
-          <label for="gastro">My experiences</label><br>
-          <input type="radio" id="pulmo" class="optionz" name="consultation" value="My life">
-          <label for="pulmo">My life</label><br>
-
-          <br>
-          <div id="bra"></div>
 
           <label for="profile-picture">Upload a profile picture or any docs?</label>
           <input type="file" id="profile-picture" name="file">
@@ -100,4 +83,5 @@
     </div>
   </div>
 </body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </html>
