@@ -105,7 +105,7 @@
     <h2 class="heading animate">PROJECTS</h2>
     <div class="services-container container3">
         <div class="service-box project3">
-            <div class="service-info project3">
+            <div class="service-info project3" id="redirect-div">
                 <h4>Node Quiz App</h4>
                 <img href="https://github.com/ValluruChakravarthy/Node-Webapp-Project" class="logo3"src="node.png">
                 <p>A full-stack project based on Node and Mysql ,with usage of API,
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="service-box project3">
-        <div class="service-info project3">
+        <div class="service-info project3" id="redirect-div1">
             <h4>NFT & XDC Pay App</h4>
             <img class="logo3"src="NFT.png">
             <p>A blockchain implementation which uses NFT token and
@@ -124,14 +124,14 @@
             
         </div>
         <div class="service-box project3">
-            <div class="service-info project3">
+            <div class="service-info project3" id="redirect-div2">
                <h4>Tic Tac Toe</h4>
                 <img class="logo3" src="tico.jpg">
                 <p>A tic tac toe game created by me using Javascript,Html,Css</p>
                  </div>
             </div>
             <div class="service-box project3">
-                <div class="service-info project3">
+                <div class="service-info project3" id="redirect-div3">
                    <h4>Snake Game</h4>
                     <img class="logo3" src="snake.png">
                     <p>A Snake game created by me using Js,Html and Css</p>
@@ -147,7 +147,7 @@
 <section class="services2" id="services job">
     <h2 class="heading2 animate">Work Experience</h2>
     <div class="services-container2 animate3">
-        <div class="service-box">
+        <div class="service-box" id="redirect-divjob">
             <img class="logo2"src="s&tlogo.png">
             <div class="service-info">
                 <h4>Teaching Assistant</h4>
@@ -157,7 +157,7 @@
                     </p><p class="period">Period : 2023-Present</p>
             </div>
         </div>
-        <div class="service-box">
+        <div class="service-box" id="redirect-divjob">
             <img class="logo2 cts"src="cognizant.png">
         <div class="service-info">
             <h4>Programmer Analyst</h4>
@@ -171,7 +171,7 @@
             </div>
             
         </div>
-        <div class="service-box">
+        <div class="service-box" id="redirect-divjob">
             <img class="logo2 cts"src="cognizant.png">
             <div class="service-info">
                 <h4>Programmer Trainee</h4>
@@ -301,7 +301,21 @@ document.getElementById("menu-icon").onclick = function() {
     x.className="bx bx-menu";
   }
 };
-
+document.getElementById('redirect-div').addEventListener('click', function() {
+            window.location.href = 'https://github.com/ValluruChakravarthy/Node-Webapp-Project';
+        });
+document.getElementById('redirect-div1').addEventListener('click', function() {
+            window.location.href='https://explorer.apothem.network/nft/xdc47d2ee24b75ede6b63a04aa27fe7e2111ea705da/0" target="_blank'
+        });
+        document.getElementById('redirect-div2').addEventListener('click', function() {
+            window.location.href='TicTacToe.html" target="_blank'
+        });
+        document.getElementById('redirect-div3').addEventListener('click', function() {
+            window.location.href='snake.html" target="_blank'
+        });
+        document.getElementById('redirect-divjob').addEventListener('click', function() {
+            window.location.href='https://www.linkedin.com/in/valluru-chakravarthy/" target="_blank'
+        });
 </script>
 
 </body>
