@@ -714,7 +714,8 @@ grid-template-columns: repeat(1,1fr);
     position:fixed;
   }
 .navbar{
-  display: none;
+  display:flex;
+  flex-direction:column;
   max-width:0.01rem;
 }
 .home-content,h1,h3{
