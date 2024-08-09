@@ -727,10 +727,11 @@ grid-template-columns: repeat(1,1fr);
   left:50%;
 }
 #menu-icon{
-  display: inline;
+  display: flex;
   left:80%;
   font-size: 4rem;
   top:4rem;
+  z-index: 55;
 }
 .dropdown{
   top:7rem;
