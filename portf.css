@@ -735,7 +735,7 @@ grid-template-columns: repeat(1,1fr);
 }
 .dropdown{
   top:7rem;
- left:60%;
+ left:50%;
   display: inline-block;
   text-decoration: none;
   color:var(--main-color);
