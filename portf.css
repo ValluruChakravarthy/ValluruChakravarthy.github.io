@@ -42,6 +42,7 @@ body{
   background: var(--bg-color);
   color:var(--text-color);
 }
+
 .header{
   position:fixed;
   top:0;
@@ -714,7 +715,7 @@ grid-template-columns: repeat(1,1fr);
     position:fixed;
   }
 .navbar{
-  display:flex;
+  display:none;
   flex-direction:column;
   max-width:0.01rem;
 }
@@ -733,9 +734,11 @@ grid-template-columns: repeat(1,1fr);
 }
 .dropdown{
   top:7rem;
+ left:60%;
   display: inline-block;
   text-decoration: none;
   color:var(--main-color);
+  transition:0.2s ease-in;
 }
 .dropdown a{
   display: flex;
