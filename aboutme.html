@@ -144,6 +144,72 @@ document.getElementById("menu-icon").onclick = function() {
     x.className="bx bx-menu";
   }
 };
+document.getElementById('redirect-div').addEventListener('click', function() {
+            window.location.href = 'https://github.com/ValluruChakravarthy/Node-Webapp-Project';
+        });
+document.getElementById('redirect-div1').addEventListener('click', function() {
+            window.location.href='https://explorer.apothem.network/nft/xdc47d2ee24b75ede6b63a04aa27fe7e2111ea705da/0" target="_blank'
+        });
+        document.getElementById('redirect-div2').addEventListener('click', function() {
+            window.location.href='https://valluruchakravarthy.github.io/TicTacToe.html'
+        });
+        document.getElementById('redirect-div3').addEventListener('click', function() {
+            window.location.href='https://valluruchakravarthy.github.io/snake.html'
+        });
+        document.getElementById('redirect-divjob').addEventListener('click', function() {
+            window.location.href='https://www.linkedin.com/in/valluru-chakravarthy/" target="_blank'
+        });
+    document.addEventListener('DOMContentLoaded', function() {
+        const elementsToAnimate = document.querySelectorAll('.animate3,.animate2,.animate, .animated-img');
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        elementsToAnimate.forEach(element => observer.observe(element));
+    });
+    let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("carousel-item");
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } 
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+var k=0;
+
+document.getElementById("menu-icon").onclick = function() {
+    var x=document.getElementById("menu-icon");
+    if (x.className === "bx bx-menu") {   
+        document.getElementById("drop").style.display="inline";
+        x.className = "bx bx-x";
+  } else {
+    console.log(x);
+    document.getElementById("drop").style.display="none";
+    x.className="bx bx-menu";
+  }
+};
 
 </script>
 
