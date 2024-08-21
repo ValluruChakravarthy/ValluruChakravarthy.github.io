@@ -711,7 +711,7 @@ grid-template-columns: repeat(1,1fr);
 @media (max-width:450px) {
   *{
     max-width:100vw;
-    overflow: hidden;
+    overflow-x:relative;
   }
   #menu-icon{
     font-size: 13.6rem;
