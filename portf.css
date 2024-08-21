@@ -710,7 +710,7 @@ grid-template-columns: repeat(1,1fr);
 }
 @media (max-width:450px) {
   *{
-    overflow-x:none;
+    overflow-x:hidden;
   }
   #menu-icon{
     font-size: 13.6rem;
