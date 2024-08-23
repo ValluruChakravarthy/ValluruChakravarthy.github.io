@@ -709,9 +709,6 @@ grid-template-columns: repeat(1,1fr);
 }
 }
 @media (max-width:450px) {
-  *{
-    overflow-x:relative;
-  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
