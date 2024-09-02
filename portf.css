@@ -712,6 +712,7 @@ grid-template-columns: repeat(1,1fr);
 .animate3{
   display:none;
   overflow-x:hidden;
+  
 }
   #menu-icon{
     font-size: 13.6rem;
