@@ -718,7 +718,6 @@ grid-template-columns: repeat(1,1fr);
 .navbar{
   display:none;
   flex-direction:column;
-  max-width:0.01rem;
 }
 .home-content,h1,h3{
   text-align: center;
@@ -732,15 +731,7 @@ grid-template-columns: repeat(1,1fr);
   top:4rem;
   z-index: 55;
 }
-.dropdown{
-  left:50%;
-  overflow-x: hidden;
-  top:7rem;
-  display: inline-block;
-  text-decoration: none;
-  color:var(--main-color);
-  transition:0.2s ease-in;
-}
+
 .dropdown a{
   display: flex;
   flex-direction: column;
