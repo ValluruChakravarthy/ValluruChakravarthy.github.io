@@ -712,8 +712,10 @@ grid-template-columns: repeat(1,1fr);
 .animate3{
   display:none;
   overflow-x:hidden;
-  
 }
+  body{
+    max-width: 98%;
+  }
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
