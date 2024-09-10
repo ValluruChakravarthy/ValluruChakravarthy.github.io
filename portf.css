@@ -731,7 +731,15 @@ grid-template-columns: repeat(1,1fr);
   top:4rem;
   z-index: 55;
 }
-
+.dropdown{
+  left:50%;
+  overflow-x: hidden;
+  top:7rem;
+  display: inline-block;
+  text-decoration: none;
+  color:var(--main-color);
+  transition:0.2s ease-in;
+}
 .dropdown a{
   display: flex;
   flex-direction: column;
