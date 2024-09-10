@@ -709,13 +709,7 @@ grid-template-columns: repeat(1,1fr);
 }
 }
 @media (max-width:450px) {
-.animate3{
-  display:none;
-  overflow-x:hidden;
-}
-  body{
-    max-width: 98%;
-  }
+
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
@@ -730,10 +724,7 @@ grid-template-columns: repeat(1,1fr);
   text-align: center;
   margin:0 auto;
 }
-.dropdown{
-  left:50%;
-  overflow-x: hidden;
-}
+
 #menu-icon{
   display: flex;
   left:80%;
@@ -742,8 +733,9 @@ grid-template-columns: repeat(1,1fr);
   z-index: 55;
 }
 .dropdown{
+  left:50%;
+  overflow-x: hidden;
   top:7rem;
- left:50%;
   display: inline-block;
   text-decoration: none;
   color:var(--main-color);
