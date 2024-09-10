@@ -709,8 +709,11 @@ grid-template-columns: repeat(1,1fr);
 }
 }
 @media (max-width:450px) {
-body{
-  max-width: 80%;
+  head{
+    max-width: 80%;
+  }
+html{
+  max-width: fit-content;
 }
   #menu-icon{
     font-size: 13.6rem;
