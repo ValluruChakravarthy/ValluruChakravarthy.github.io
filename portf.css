@@ -678,41 +678,10 @@ overflow: visible;
   margin:0 auto;
 }
 }
-@media(max-width:991px){
-  header{
-    padding:2rem 3%;
-  }
-  section{
-    padding:10rem 3% 2rem;
-  }
-  .timeline-items::before{
-    left:7px;
-  }
-  .timeline-item:nth-child(){
-    padding-right:0;
-    text-align:left;
-  }
-  .timeline-item:nth-child(odd),.timeline-item:nth-child(even){
-    padding-left:37px;
-  }
-.timeline-dot{
-  left:0;
-}
-.services{
-  padding-bottom:7rem;
-}
-.certifications ,.wrapper{
-grid-template-columns: repeat(1,1fr);
-}
-.footer{
-  padding:2rem 3%;
-}
-}
 @media (max-width:450px) {
-
-  .animate3{
-    overflow-x: hidden;
-  }
+html{
+  overflow-x:hidden;
+}
   #menu-icon{
     font-size: 13.6rem;
     color:var(--main-color);
