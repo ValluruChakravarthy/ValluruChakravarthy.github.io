@@ -730,6 +730,7 @@ grid-template-columns: repeat(1,1fr);
 }
 .dropdown{
   left:50%;
+  overflow-x: hidden;
 }
 #menu-icon{
   display: flex;
