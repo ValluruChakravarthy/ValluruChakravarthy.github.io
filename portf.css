@@ -710,12 +710,12 @@ grid-template-columns: repeat(1,1fr);
 }
 @media (max-width:450px) {
   body {
-    overflow-x: hidden; /* This hides any horizontal overflow */
+    overflow-x: hidden; 
   }
   
   .container {
-    max-width: 100vw; /* This ensures that the container width doesn't exceed the viewport width */
-    overflow-x: hidden; /* Avoids horizontal scroll if content is overflowing */
+    max-width: 100vw; 
+    overflow-x: hidden; 
   }
   #menu-icon{
     font-size: 13.6rem;
