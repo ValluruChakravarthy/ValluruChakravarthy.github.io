@@ -8,7 +8,7 @@
     --bg-color: rgba(0, 0, 0, 0.958);
     --second-bg-color:#131313;
     --text-color:white;
-    --main-color:#00ffee;
+    --main-color:#008cff;
   }
 body {
     font-family:"Poppins",sans-serif;
@@ -20,7 +20,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    color: #f5f6f7;
+    color: #b5d3f1;
 }
 
 @keyframes gradientBG {
@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     max-width:90vw;
     width: 47vw;
-    margin-top: 6%;
+    margin-top: 16%;
     margin-bottom: 6%;
     color:transparent;
     gap:21vw;
@@ -66,8 +66,14 @@ h1 {
     font-weight: 800;
     font-size:2.1rem;
 }
-
+i{
+    font-size: 29px;
+    margin-left:7px;
+}
 p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     color: #e9e9e9;
     text-align: center;
     margin-bottom: 20px;
@@ -89,12 +95,12 @@ fieldset {
 }
 
 label {
-    margin-top:0 auto;
+    margin-top:2rem auto;
     color: #ededed;
 }
 
 input, select, textarea, button {
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--main-color);
@@ -130,7 +136,7 @@ button {
 }
 
 button:hover {
-    background: #0a9cc4;
+    background: #0ac4a8;
 }
 
 @media (max-width: 680px) {
